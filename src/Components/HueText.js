@@ -3,6 +3,7 @@ import React, {useState ,useRef } from "react";
 
 function HueText({response}) {
 ;
+console.log('hueText')
 // state for the hue responses
   return (
     <div className="MainContainer">
