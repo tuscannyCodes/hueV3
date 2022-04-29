@@ -5,11 +5,13 @@ import "./App.css";
 import { useState, Component } from "react";
 
 function App() {
+
+  const [response,setResponse] = useState ("this is a placeholder");
   return (
     <div className="App">
-      <HueText/>
+      <HueText response={response}/>
       <InputBox/>
-      <MainButton/>
+      <MainButton setResponse={setResponse}/>
     </div>
   );
 }

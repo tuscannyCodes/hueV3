@@ -7,7 +7,7 @@ function HueText({response}) {
   return (
     <div className="MainContainer">
       <div className="HueText-container">
-       <h1 className="HueText">This is placeholder text</h1>
+       <h1 className="HueText">{response}</h1>
       </div>
     </div>
   );
