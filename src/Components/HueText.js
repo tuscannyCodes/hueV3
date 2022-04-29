@@ -1,4 +1,4 @@
-import "./HueText.css";
+
 import React, {useState ,useRef } from "react";
 
 function HueText({response}) {
