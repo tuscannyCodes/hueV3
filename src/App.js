@@ -4,21 +4,46 @@ import MainButton from "./Components/MainButton";
 import { useState } from "react";
 
 function App() {
+  // state for responses
+  const [response, setResponse] = useState("");
+
+  // greeting object
+  const greetings = {
+    hello: "hello",
+    hi: "hi",
+    hey: "hey",
+    goodMorning: "good morning",
+    goodbye: "goodbye",
+  };
+  // greeting object END
+
   // this will be the main function that calls other functions.
- 
-  const [response, setResponse] = useState("this is a placeholder");
 
-  const fn1=()=> {
+  const fn1 = () => {
     let userInput = document.getElementById("mainInputBox").value;
-    console.log(userInput);
 
-    if (userInput === "hi") {
+    // if statements for GREETINGS Object
+    if (userInput.includes(greetings.hello)) {
+      setResponse("hello");
+    }
+    if (userInput.includes(greetings.hi)) {
       setResponse("hello there");
     }
-  }
+   
+    if (userInput.includes(greetings.hey)) {
+      setResponse("hey there.");
+    }
+    if (userInput.includes(greetings.goodMorning)) {
+      setResponse("Morning :)");
+    }
+    if (userInput.includes(greetings.goodbye)) {
+      setResponse("Goodbye.");
+    }
+   
 
-
-  
+  };
+  // end of fn1
+// this is rendering the components
   return (
     <div className="App">
       <HueText response={response} />

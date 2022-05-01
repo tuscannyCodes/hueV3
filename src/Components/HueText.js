@@ -1,7 +1,7 @@
 import React from "react";
 
 function HueText({ response }) {
-  console.log("hueText");
+ 
   // state for the hue responses
   return (
     <div className="MainContainer">
