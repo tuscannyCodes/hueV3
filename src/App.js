@@ -7,64 +7,65 @@ function App() {
   // state for responses
   const [response, setResponse] = useState("");
 
-  // greeting object
-  const greetings = {
-    hello: "hello",
-    hi: "hi",
-    hey: "hey",
-    goodMorning: "good morning",
-    goodbye: "goodbye",
-  };
-  // greeting object END
+  
 
   // this will be the main function that calls other functions.
 
   const fn1 = () => {
     let userInput = document.getElementById("mainInputBox").value;
 
-// thinking animation
+    // thinking animation
 
-function thinking() {
+    function thinking() {
+      setTimeout(() => {
+        setResponse(".");
+      }, 100);
+      setTimeout(() => {
+        setResponse("..");
+      }, 800);
+      setTimeout(() => {
+        setResponse("...");
+      }, 1600);
+    }
+    thinking();
+    // thinking animation END
+    // timer for after thinking animation
+    // want to take this entire function and put it into a seperate component
+    setTimeout(function getGreetings(){
+// greeting object
+const greetings = {
+  hello: "hello",
+  hi: "hi",
+  hey: "hey",
+  goodMorning: "good morning",
+  goodbye: "goodbye",
+};
+// greeting object END
 
-  setTimeout(() => {
-    setResponse(".")
-  }, 100);
-  setTimeout(() => {
-    setResponse("..")
-  }, 800);
-  setTimeout(() => {
-    setResponse("...")
-  }, 1600);
 
+      // if user does not type anything
+      if (userInput === "" || userInput === " ") {
+        setResponse("you didnt say anything");
+      }
+      // if user does not type anything END
+      // if statements for GREETINGS Object
+      if (userInput.includes(greetings.hello)) {
+        setResponse("hello");
+      }
+      if (userInput.includes(greetings.hi)) {
+        setResponse("hello there");
+      }
 
-}
-thinking();
-// thinking animation END
-// timer for after thinking animation
-setTimeout(() => { 
-    // if user does not type anything
-    if (userInput === "" || userInput === " ") {
-      setResponse("you didnt say anything");
-    }
-    // if user does not type anything END
-    // if statements for GREETINGS Object
-    if (userInput.includes(greetings.hello)) {
-      setResponse("hello");
-    }
-    if (userInput.includes(greetings.hi)) {
-      setResponse("hello there");
-    }
-
-    if (userInput.includes(greetings.hey)) {
-      setResponse("hey there.");
-    }
-    if (userInput.includes(greetings.goodMorning)) {
-      setResponse("Morning :)");
-    }
-    if (userInput.includes(greetings.goodbye)) {
-      setResponse("Goodbye. See you later.");
-    }
-  },3000);
+      if (userInput.includes(greetings.hey)) {
+        setResponse("hey there.");
+      }
+      if (userInput.includes(greetings.goodMorning)) {
+        setResponse("Morning :)");
+      }
+      if (userInput.includes(greetings.goodbye)) {
+        setResponse("Goodbye. See you later.");
+      }
+    }, 3000);
   };
   // end of fn1
   // this is rendering the components
