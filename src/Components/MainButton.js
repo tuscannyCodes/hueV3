@@ -6,7 +6,7 @@ function MainButton({ fn1, setResponse }) {
     <div className="MainContainer">
       <div className="Button-container">
         <button onClick={fn1} className="MainButton">
-          ...
+         
         </button>
       </div>
     </div>

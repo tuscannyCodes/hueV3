@@ -1,3 +1,7 @@
+* {
+  overflow: hidden;
+}
+
 /* general styles */
 
 body {
@@ -60,4 +64,8 @@ body {
   padding-bottom: 19px;
   padding-left: 7px;
   cursor: pointer;
+}
+
+.MainButton:active {
+  background-color: red;
 }
