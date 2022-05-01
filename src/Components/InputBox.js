@@ -1,8 +1,6 @@
-
-import React, { useState, useRef } from "react";
+import React from "react";
 
 function InputBox() {
-  
   return (
     <>
       <div className="MainContainer">
