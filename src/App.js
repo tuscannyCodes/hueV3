@@ -2,7 +2,7 @@ import HueText from "./Components/HueText";
 import InputBox from "./Components/InputBox";
 import MainButton from "./Components/MainButton";
 import { useState } from "react";
-
+// import GreetingsHandler from "./Components/GreetingsHandler";
 function App() {
   // state for responses
   const [response, setResponse] = useState("");
@@ -26,34 +26,40 @@ function App() {
       }, 1600);
     }
     thinking();
+
+    // <GreetingsHandler userInput={userInput} setResponse={setResponse}/>
     // thinking animation END
     // timer for after thinking animation
     // want to take this entire function and put it into a seperate component
     setTimeout(function getGreetings() {
       // greeting object
       const greetings = {
-        greets: ["hello", "hi", "hey", "good morning", "goodbye","yo"],
-        responses: ["hello","hello there","hey there", "hi"],
+        greets: ["hello", "hi", "hey", "good morning", "goodbye", "yo"],
+        responses: ["hello", "hello there", "hey there", "hi", "whats up?"],
         getGreetResponse: function () {
           // if user does not type anything
           if (userInput === "" || userInput === " ") {
             setResponse("you didnt say anything");
-          }  // if user does not type anything END
-        
+          } // if user does not type anything END
+
           // if statements for GREETINGS Object
+          // this loops over generic greetings and gives generic responses
           for (let i = 0; i < greetings.greets.length; i++) {
-            if (userInput.includes(greetings.greets[i] )) {
-              setResponse(greetings.responses[Math.floor(Math.random()*greetings.responses.length)]);
+            if (userInput.includes(greetings.greets[i])) {
+              setResponse(
+                greetings.responses[
+                  Math.floor(Math.random() * greetings.responses.length)
+                ]
+              );
             }
-        }// this loops over generic greetings and gives generic responses
-// these are for more specific greetings
+          }
+          // these are for more specific greetings
           if (userInput.includes(greetings.greets[3])) {
             setResponse("Morning :)");
           }
           if (userInput.includes(greetings.greets[4])) {
             setResponse("Goodbye. See you later.");
           }
-          
         }, // getGreetResponse method END
       }; // greeting object END
       greetings.getGreetResponse();
@@ -69,5 +75,17 @@ function App() {
     </div>
   );
 }
+/**
+ * app
+ *  response label 
+ *  user form
+ *  chatbot control
+ *   
+ * 
+ * */
+
+
+
+
 
 export default App;
