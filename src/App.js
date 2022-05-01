@@ -22,6 +22,31 @@ function App() {
   const fn1 = () => {
     let userInput = document.getElementById("mainInputBox").value;
 
+// thinking animation
+
+function thinking() {
+
+  setTimeout(() => {
+    setResponse(".")
+  }, 100);
+  setTimeout(() => {
+    setResponse("..")
+  }, 800);
+  setTimeout(() => {
+    setResponse("...")
+  }, 1600);
+
+
+}
+thinking();
+// thinking animation END
+// timer for after thinking animation
+setTimeout(() => { 
+    // if user does not type anything
+    if (userInput === "" || userInput === " ") {
+      setResponse("you didnt say anything");
+    }
+    // if user does not type anything END
     // if statements for GREETINGS Object
     if (userInput.includes(greetings.hello)) {
       setResponse("hello");
@@ -29,7 +54,7 @@ function App() {
     if (userInput.includes(greetings.hi)) {
       setResponse("hello there");
     }
-   
+
     if (userInput.includes(greetings.hey)) {
       setResponse("hey there.");
     }
@@ -37,13 +62,12 @@ function App() {
       setResponse("Morning :)");
     }
     if (userInput.includes(greetings.goodbye)) {
-      setResponse("Goodbye.");
+      setResponse("Goodbye. See you later.");
     }
-   
-
+  },3000);
   };
   // end of fn1
-// this is rendering the components
+  // this is rendering the components
   return (
     <div className="App">
       <HueText response={response} />
