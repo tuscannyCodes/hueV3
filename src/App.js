@@ -32,33 +32,28 @@ function App() {
     setTimeout(function getGreetings() {
       // greeting object
       const greetings = {
-        greets: ["hello", "hi", "hey", "good morning", "goodbye","yo",],
+        greets: ["hello", "hi", "hey", "good morning", "goodbye","yo"],
+        responses: ["hello","hello there","hey there", "hi"],
         getGreetResponse: function () {
           // if user does not type anything
           if (userInput === "" || userInput === " ") {
             setResponse("you didnt say anything");
-          }
-          // if user does not type anything END
+          }  // if user does not type anything END
+        
           // if statements for GREETINGS Object
-          if (userInput.includes(greetings.greets[0])) {
-            setResponse("hello");
-          }
-          if (userInput.includes(greetings.greets[1])) {
-            setResponse("hello there");
-          }
-
-          if (userInput.includes(greetings.greets[2])) {
-            setResponse("hey there.");
-          }
+          for (let i = 0; i < greetings.greets.length; i++) {
+            if (userInput.includes(greetings.greets[i] )) {
+              setResponse(greetings.responses[Math.floor(Math.random()*greetings.responses.length)]);
+            }
+        }// this loops over generic greetings and gives generic responses
+// these are for more specific greetings
           if (userInput.includes(greetings.greets[3])) {
             setResponse("Morning :)");
           }
           if (userInput.includes(greetings.greets[4])) {
             setResponse("Goodbye. See you later.");
           }
-          if (userInput.includes(greetings.greets[5])) {
-            setResponse("Whats up?");
-          }
+          
         }, // getGreetResponse method END
       }; // greeting object END
       greetings.getGreetResponse();
