@@ -2,8 +2,7 @@ import HueText from "./Components/HueText";
 import InputBox from "./Components/InputBox";
 import MainButton from "./Components/MainButton";
 import useGreetingsLogic from "./Components/useGreetingsLogic";
-import { useState } from "react";
-// import GreetingsHandler from "./Components/GreetingsHandler";
+
 function App() {
   const { responseCallbackHandler, response, setResponse } =
     useGreetingsLogic();

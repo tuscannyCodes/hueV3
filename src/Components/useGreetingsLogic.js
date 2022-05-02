@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const useGreetingsLogic = () => {
   // This controls the state for the text being displayed
-  const [response, setResponse] = useState(" ");
+  const [response, setResponse] = useState(".__.");
   // callback function to place function inside of fn1
   function responseCallbackHandler() {
     setTimeout(function getGreetings() {
