@@ -1,15 +1,15 @@
 import HueText from "./Components/HueText";
 import InputBox from "./Components/InputBox";
 import MainButton from "./Components/MainButton";
-import useGreetingsLogic from "./Components/useGreetingsLogic";
-import useResetResponseLogic from "./Components/useResetResponseLogic";
+import useFn2Logic from "./Components/useFn2Logic";
 function App() {
   // const { responseCallbackHandler, response, setResponse } =
   //   useGreetingsLogic();
-const {resetResponseCallback,response, setResponse} = useResetResponseLogic();
-  // this will be the main function that calls other functions.
+  const { fn2CallbackHandler, response, setResponse } = useFn2Logic();
 
-  const Fn1 = () => {
+  // this will be the main function that calls fn2 that calls other functions.
+
+  const fn1 = () => {
     // thinking animation
 
     function thinking() {
@@ -25,8 +25,10 @@ const {resetResponseCallback,response, setResponse} = useResetResponseLogic();
     }
     thinking();
     // end of thinking animation.
-    // responseCallbackHandler();
-    resetResponseCallback();
+
+    fn2CallbackHandler();
+
+   
   }; // end of fn1
 
   // this is rendering the components
@@ -34,7 +36,7 @@ const {resetResponseCallback,response, setResponse} = useResetResponseLogic();
     <div className="App">
       <HueText response={response} />
       <InputBox />
-      <MainButton fn1={Fn1} setResponse={setResponse} />
+      <MainButton fn1={fn1} setResponse={setResponse} />
     </div>
   );
 }

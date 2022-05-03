@@ -1,8 +1,8 @@
-import { useState } from "react";
 
-const useGreetingsLogic = () => {
+
+const useGreetingsLogic = (response, setResponse) => {
   // This controls the state for the text being displayed
-  const [response, setResponse] = useState(".__.");
+//   const [response, setResponse] = useState(".__.");
   // callback function to place function inside of fn1
   function responseCallbackHandler() {
     setTimeout(function getGreetings() {
@@ -11,7 +11,7 @@ const useGreetingsLogic = () => {
 
       const greetings = {
         greets: ["hello", "hi", "hey", "good morning", "goodbye", "yo"],
-        responses: ["hello", "hello there", "hey there", "hi", "whats up?"],
+        responses: ["hello", "hello there", "hey there", "hi", "whats up?","yo"],
         getGreetResponse: function () {
           // if user does not type anything
           if (userInput === "" || userInput === " ") {
