@@ -39,7 +39,7 @@ const useGreetingsLogic = (response, setResponse) => {
         }, // getGreetResponse method END
       }; // greeting object END
       greetings.getGreetResponse();
-    }, 3000);
+    }, 2600);
   }
   return { responseCallbackHandler, response, setResponse };
 };

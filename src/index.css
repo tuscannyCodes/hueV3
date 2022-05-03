@@ -20,6 +20,20 @@ body {
   width:100%;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
+}
+
+.HueText{
+  cursor: default;
+font-size: 80px;
+  font-weight: bold;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 /* Input box */
 
@@ -81,11 +95,11 @@ body {
   -khtml-box-shadow: inset 0 0 5px 0 crimson;
   -o-box-shadow: inset 0 0 5px 0 crimson;
   /* Borders */
-  border-width: 1px;
+  border-width: 1.5px;
   border-style: solid;
-  border-left-color: rgb(154, 21, 48);
+  border-left-color: rgb(76, 13, 25);
   border-right-color: rgb(154, 21, 48);
-  border-top-color: rgb(154, 21, 48);
+  border-top-color: rgb(102, 16, 33);
   border-bottom: 4px solid rgb(128, 18, 40);
   /* {{ No selectable }} */
   user-select: none;
