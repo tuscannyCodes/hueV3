@@ -1,14 +1,14 @@
 
-
+// importing state from main logical component "useFn2Logic"
+ // This controls the state for the text being displayed
 const useGreetingsLogic = (response, setResponse) => {
-  // This controls the state for the text being displayed
-//   const [response, setResponse] = useState(".__.");
-  // callback function to place function inside of fn1
+  // callback function to place function inside of fn2
   function responseCallbackHandler() {
     setTimeout(function getGreetings() {
       // greeting object
+      // ***need to replace this with ref
       let userInput = document.getElementById("mainInputBox").value;
-
+// greetings object
       const greetings = {
         greets: ["hello", "hi", "hey", "good morning", "goodbye", "yo"],
         responses: ["hello", "hello there", "hey there", "hi", "whats up?","yo"],
