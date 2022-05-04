@@ -1,3 +1,4 @@
+import React, { useCallback} from 'react';
 import HueText from "./Components/HueText";
 import InputBox from "./Components/InputBox";
 import MainButton from "./Components/MainButton";
@@ -9,35 +10,31 @@ function App() {
   const { fn2CallbackHandler, response, setResponse } = useFn2Logic();
 
   // this will be the main function that calls fn2 that calls other functions.
+  const thinkingCallback = useCallback(() => {
+    setTimeout(() => {
+      setResponse(".");
+    }, 100);
+    setTimeout(() => {
+      setResponse("..");
+    }, 800);
+    setTimeout(() => {
+      setResponse("...");
+    }, 1600);
+  }, [setResponse]);
 
-  const fn1 = () => {
+  const fn1Callback = useCallback(() => {
     // thinking animation
-
-    function thinking() {
-      setTimeout(() => {
-        setResponse(".");
-      }, 100);
-      setTimeout(() => {
-        setResponse("..");
-      }, 800);
-      setTimeout(() => {
-        setResponse("...");
-      }, 1600);
-    }
-    thinking();
     // end of thinking animation.
-
+    thinkingCallback();
     fn2CallbackHandler();
-
-   
-  }; // end of fn1
+  }, [fn2CallbackHandler, thinkingCallback]);
 
   // this is rendering the components
   return (
     <div className="App">
       <HueText response={response} />
       <InputBox />
-      <MainButton fn1={fn1} setResponse={setResponse} />
+      <MainButton fn1={fn1Callback} setResponse={setResponse} />
     </div>
   );
 }

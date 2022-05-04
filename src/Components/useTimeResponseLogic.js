@@ -6,7 +6,7 @@ const useTimeResponseLogic = (setResponse) => {
   // callback function to place function inside of fn1
 
   
-const [ theCurrentTime, setTheCurrentTime] = useState("hello");
+ const [ theCurrentTime, setTheCurrentTime] = useState("hello");
   function timeResponseCallbackHandler() {
     setTimeout(function getTimeResponse() {
       // let time = new Date(); // This is for the time.
@@ -18,11 +18,11 @@ const [ theCurrentTime, setTheCurrentTime] = useState("hello");
           let updatedTime = new Date().toLocaleString("en-US", {
             hour: "numeric",
             minute: "numeric",
-            //second: "numeric",
+            second: "numeric",
             hour12: true,
           });
           setTheCurrentTime(updatedTime);
-          setResponse(`${"The time is "}` + theCurrentTime);
+          setResponse(`The time is ${updatedTime}`);
           // *** this displays "the time as initial state then after displays old time".
         }
       }
