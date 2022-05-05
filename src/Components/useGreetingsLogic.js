@@ -1,17 +1,22 @@
-
 // importing state from main logical component "useFn2Logic"
- // This controls the state for the text being displayed
 const useGreetingsLogic = (response, setResponse) => {
   // callback function to place function inside of fn2
   function responseCallbackHandler() {
-    setTimeout(function getGreetings() {
-      // greeting object
+    getGreetings();
+    function getGreetings() {
       // ***need to replace this with ref
       let userInput = document.getElementById("mainInputBox").value;
-// greetings object
+      // greetings object
       const greetings = {
         greets: ["hello", "hi", "hey", "good morning", "goodbye", "yo"],
-        responses: ["hello", "hello there", "hey there", "hi", "whats up?","yo"],
+        responses: [
+          "hello",
+          "hello there",
+          "hey there",
+          "hi",
+          "whats up?",
+          "yo",
+        ],
         getGreetResponse: function () {
           // if user does not type anything
           if (userInput === "" || userInput === " ") {
@@ -39,7 +44,7 @@ const useGreetingsLogic = (response, setResponse) => {
         }, // getGreetResponse method END
       }; // greeting object END
       greetings.getGreetResponse();
-    }, 2600);
+    }
   }
   return { responseCallbackHandler, response, setResponse };
 };

@@ -4,15 +4,10 @@ import MainButton from "./Components/MainButton";
 import useFn2Logic from "./Components/useFn2Logic";
 
 function App() {
-  // const { responseCallbackHandler, response, setResponse } =
-  //   useGreetingsLogic();
   const { fn2CallbackHandler, response, setResponse } = useFn2Logic();
-
-  // this will be the main function that calls fn2 that calls other functions.
-
-  const fn1 = () => {
+    // this will be the main function that calls fn2 that calls other functions.
+    const fn1 = () => {
     // thinking animation
-
     function thinking() {
       setTimeout(() => {
         setResponse(".");
@@ -26,10 +21,10 @@ function App() {
     }
     thinking();
     // end of thinking animation.
-
-    fn2CallbackHandler();
-
-   
+    // calls main logic function. 
+    setTimeout(() => {
+      fn2CallbackHandler();
+    }, 2600);
   }; // end of fn1
 
   // this is rendering the components
