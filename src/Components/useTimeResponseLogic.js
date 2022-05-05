@@ -1,6 +1,5 @@
 // importing state from main logical component "useFn2Logic"
 const useTimeResponseLogic = (setResponse) => {
-  let timeMode=false
   // callback function to place function inside of fn1
   function timeResponseCallbackHandler() {
     getTimeResponse();
@@ -10,7 +9,6 @@ const useTimeResponseLogic = (setResponse) => {
       //TIME RESPONSE
 
       if (userInput.includes(" time")) {
-        timeMode = true;
         currentTime();
         // *** NEET TO CLEAR THIS INTERVAL SOMEWHERE
 
