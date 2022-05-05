@@ -11,18 +11,22 @@ function App() {
     function thinking() {
       setTimeout(() => {
         setResponse(".");
+        console.log(100)
       }, 100);
       setTimeout(() => {
         setResponse("..");
+        console.log(800)
       }, 800);
       setTimeout(() => {
         setResponse("...");
+        console.log(1600)
       }, 1600);
     }
     thinking();
     // end of thinking animation.
     // calls main logic function. 
     setTimeout(() => {
+      console.log("fn1 fired")
       fn2CallbackHandler();
     }, 2600);
   }; // end of fn1

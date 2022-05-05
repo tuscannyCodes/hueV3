@@ -5,7 +5,7 @@ function InputBox() {
     <>
       <div className="MainContainer">
         <div className="InputBox-container">
-          <input
+          <input 
             type="text"
             id="mainInputBox"
             className="InputBox"
