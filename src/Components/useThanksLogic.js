@@ -6,7 +6,7 @@ const useThanksLogic = (setResponse) => {
       function getThanks() {
         // ***need to replace this with ref
         let userInput = document.getElementById("mainInputBox").value;
-        // greetings object
+        // thanks object
         const thanks = {
           TheThanks: ["thanks", "thank you"],
           responses: [
@@ -18,7 +18,7 @@ const useThanksLogic = (setResponse) => {
           ],
           getThanksResponse: function () {
             // if statements for thanks Object
-            // this loops over generic greetings and gives generic responses
+            // this loops over generic thanks and gives generic responses
             for (let i = 0; i < thanks.TheThanks.length; i++) {
               if (userInput.includes(thanks.TheThanks[i])) {
                 setResponse(
@@ -28,8 +28,8 @@ const useThanksLogic = (setResponse) => {
                 );
               }
             }
-          }, // getGreetResponse method END
-        }; // greeting object END
+          }, // getThanksResponse method END
+        }; // thanks object END
         thanks.getThanksResponse();
       }
     }
