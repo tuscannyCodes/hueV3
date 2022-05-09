@@ -2,6 +2,7 @@ import { useState } from "react";
 import useGreetingsLogic from "./useGreetingsLogic";
 import useTimeResponseLogic from "./useTimeResponseLogic";
 import useThanksLogic from "./useThanksLogic";
+import useQuestionsLogic from "./useQuestionsLogic";
 const useFn2Logic = () => {
   // This controls the state for the text being displayed
   let dynamicTime;
@@ -9,6 +10,7 @@ const useFn2Logic = () => {
   // STATE
   const [response, setResponse] = useState(".__.");
   // STATE END
+  const {questionsCallbackHandler} = useQuestionsLogic(response, setResponse);
   const {ThanksCallbackHandler} = useThanksLogic(setResponse);
   const { timeResponseCallbackHandler } = useTimeResponseLogic(setResponse);
   const { responseCallbackHandler } = useGreetingsLogic(response,setResponse);
@@ -27,6 +29,7 @@ const useFn2Logic = () => {
       }
       responseCallbackHandler();
       ThanksCallbackHandler();
+      questionsCallbackHandler();
     }
 
     fn2();
