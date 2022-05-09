@@ -26,6 +26,7 @@ const useThanksLogic = (setResponse) => {
                     Math.floor(Math.random() * thanks.responses.length)
                   ]
                 );
+                
               }
             }
           }, // getThanksResponse method END

@@ -11,7 +11,7 @@ const useFn2Logic = () => {
   // STATE END
   const {ThanksCallbackHandler} = useThanksLogic(setResponse);
   const { timeResponseCallbackHandler } = useTimeResponseLogic(setResponse);
-  const { responseCallbackHandler } = useGreetingsLogic(setResponse);
+  const { responseCallbackHandler } = useGreetingsLogic(response,setResponse);
   // callback function to place function inside of fn1
   function fn2CallbackHandler() {
     function fn2() {
