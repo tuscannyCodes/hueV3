@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// still working on how to include bootstrap 
+// import 'bootstrap/dist/css/bootstrap.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <button type="button" class="btn btn-danger">Danger</button> */}
+
   </React.StrictMode>
 );
 
