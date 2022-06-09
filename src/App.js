@@ -2,7 +2,8 @@ import HueText from "./Components/HueText";
 import InputBox from "./Components/InputBox";
 import MainButton from "./Components/MainButton";
 import useFn2Logic from "./Components/useFn2Logic";
-
+// import Navbar from "./Components/Navbar"; 
+// Navbar component moved to index.js file. 
 function App() {
   const { fn2CallbackHandler, response, setResponse } = useFn2Logic();
     // this will be the main function that calls fn2 that calls other functions.
@@ -34,6 +35,7 @@ function App() {
   // this is rendering the components
   return (
     <div className="App">
+      
       <HueText response={response} />
       <InputBox />
       <MainButton fn1={fn1} setResponse={setResponse} />

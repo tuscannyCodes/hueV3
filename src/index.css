@@ -12,6 +12,11 @@ body {
   margin-top: 30vh;
 }
 
+.navbar {
+  
+  margin-bottom: 25vh;
+}
+
 /* text */
 
 .HueText-container {
@@ -41,6 +46,7 @@ font-size: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .InputBox {
