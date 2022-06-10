@@ -2,8 +2,11 @@ import HueText from "./Components/HueText";
 import InputBox from "./Components/InputBox";
 import MainButton from "./Components/MainButton";
 import useFn2Logic from "./Components/useFn2Logic";
-// import Navbar from "./Components/Navbar"; 
-// Navbar component moved to index.js file. 
+import Navbar, {ROUTES} from "./Components/Navbar"; 
+import About from "./Components/About";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
 function App() {
   const { fn2CallbackHandler, response, setResponse } = useFn2Logic();
     // this will be the main function that calls fn2 that calls other functions.
@@ -35,10 +38,38 @@ function App() {
   // this is rendering the components
   return (
     <div className="App">
-      
+
+      <Navbar/>
+      <Router>
+<Routes>
+  {/* Home page */}
+      <Route
+            path={ROUTES.HOME}
+            exact={true}
+            element={
+              <>
       <HueText response={response} />
       <InputBox />
       <MainButton fn1={fn1} setResponse={setResponse} />
+              </>
+            }
+          />
+
+ {/* Home page END */}
+  {/* About page */}
+<Route
+            path={ROUTES.ABOUT}
+            element={
+              <>
+                <div>
+                  <About/>
+                </div>
+              </>
+            }
+          />
+           {/* About page END*/}
+      </Routes>
+      </Router>
     </div>
   );
 }

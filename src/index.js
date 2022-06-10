@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// still working on how to include bootstrap 
+
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<Navbar/>
+{/* <Navbar/> */}
     <App />
+    
     
 
   </React.StrictMode>
