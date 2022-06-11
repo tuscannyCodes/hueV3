@@ -1,5 +1,5 @@
-* {
-  overflow: hidden;
+body {
+  /* overflow: hidden; */
 }
 
 /* general styles */
@@ -135,7 +135,48 @@ font-size: 80px;
   -moz-box-shadow: inset 0 0 5px 0 #333;
   -webkit-box-shadow: inset 0 1px 2px 0 #333, 0 1px 1px 0 rgb(183, 17, 50);
 }
+/* Navbar START*/
 
+.navbar {
+top: 0;
+
+
+}
+
+.navContainer{
+
+  display: flex;
+  Justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    left:0;
+  }
+
+}
+/* Navbar END */
+
+/* Design Page START */
+
+.designContainer{
+display: flex;
+justify-content: center;
+  margin-top:20vh;
+
+
+}
+
+.card{
+
+  filter: drop-shadow(5px 5px 10px rgb(118, 85, 2));
+}
+
+
+
+/* Design Page END */
 
 /* About Page */
 
@@ -145,3 +186,5 @@ font-size: 80px;
   margin-top:20vh;
   
 }
+
+/* About Page END */

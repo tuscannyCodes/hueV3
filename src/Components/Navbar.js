@@ -3,7 +3,7 @@ import React from "react";
 export const ROUTES = {
   HOME: '/',
   ABOUT: '/about',
-  PROJECTS: '/projects',
+  DESIGN: '/design',
   }
 
 
@@ -12,8 +12,8 @@ function Navbar() {
   // state for the hue responses
   return (
   
-    
-    <nav className=" navbar navbar-expand-lg position-absolute ">
+    <div className="navContainer">
+    <nav className="navbar navbar-expand-lg position-absolute ">
       <div className="container-fluid">
         
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@ function Navbar() {
     </nav>
     
     
-
+    </div>
 
   );
 }

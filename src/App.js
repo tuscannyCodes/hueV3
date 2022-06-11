@@ -4,6 +4,7 @@ import MainButton from "./Components/MainButton";
 import useFn2Logic from "./Components/useFn2Logic";
 import Navbar, {ROUTES} from "./Components/Navbar"; 
 import About from "./Components/About";
+import Design from "./Components/Design";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -56,6 +57,19 @@ function App() {
           />
 
  {/* Home page END */}
+
+ <Route
+            path={ROUTES.DESIGN}
+            element={
+              <>
+                <div>
+                  <Design/>
+                </div>
+              </>
+            }
+          />
+
+
   {/* About page */}
 <Route
             path={ROUTES.ABOUT}
