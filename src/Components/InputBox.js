@@ -8,7 +8,7 @@ function InputBox() {
           <input 
             type="text"
             id="mainInputBox"
-            className="InputBox"
+            className="InputBox border border-dark"
             placeholder="Say something"
           ></input>
         </div>

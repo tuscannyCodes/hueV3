@@ -151,23 +151,28 @@ top: 0;
 }
 
 
-@media only screen and (max-width: 992px) {
-  .navbar {
-    left:0;
-  }
 
-}
 /* Navbar END */
 
 /* Design Page START */
 
 .designContainer{
 display: flex;
-justify-content: center;
+justify-content: center; 
   margin-top:20vh;
+ 
 
 
 }
+
+.designContainer2{
+  display: flex;
+  justify-content: center; 
+    
+   
+  
+  
+  }
 
 .card{
 
@@ -188,3 +193,14 @@ justify-content: center;
 }
 
 /* About Page END */
+
+/* MEDIA */
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    left:0;
+  }
+
+  
+
+}
