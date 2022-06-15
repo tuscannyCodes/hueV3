@@ -11,7 +11,7 @@ function Design() {
           className="card  m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
         >
-          <img src="public/images/smiley-face.png" className="card-img-top" alt="..."></img>
+          <img src="public/images/portfolio.jpg" className="card-img-top" alt="..."/>
           <div className="card-body">
             <h5 className="card-title">Portfolio Website</h5>
             <p className="card-text">
@@ -26,7 +26,7 @@ function Design() {
           className="card m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
         >
-          <img src="public/images/portfolio.jpg" className="card-img-top" alt="..."></img>
+          <img src="public/images/portfolio.jpg" className="card-img-top" alt="..."/>
           <div className="card-body">
             <h5 className="card-title">Bootstrap Website</h5>
             <p className="card-text">
@@ -50,7 +50,7 @@ function Design() {
           className="card  m-5 rounded-3 border border-dark "
           style={{ width: "20rem" }}
         >
-          <img src="..." className="card-img-top" alt="..."></img>
+          <img src="..." className="card-img-top" alt="..."/>
           <div className="card-body">
             <h5 className="card-title">Portfolio Website</h5>
             <p className="card-text">
@@ -66,7 +66,7 @@ function Design() {
           className="card m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
         >
-          <img src="public/images/simon.jpg" className="card-img-top" alt="..."></img>
+          <img src="public/images/simon.jpg" className="card-img-top" alt="..."/>
           <div className="card-body">
             <h5 className="card-title">Simon Game Website</h5>
             <p className="card-text">
