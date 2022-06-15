@@ -15,7 +15,7 @@ function Design() {
           <div className="card-body">
             <h5 className="card-title">Portfolio Website</h5>
             <p className="card-text">
-              A landing page layout design created using Bootstrap.
+              Animated Portfolio design created with React and Framer Motion.
             </p>
             <a href="#" className="btn btn-dark">
               visit
@@ -69,7 +69,7 @@ function Design() {
           <div className="card-body">
             <h5 className="card-title">Fruit Trivia Website</h5>
             <p className="card-text">
-              Fruit Trivia Game that lets user guess what fruit based on small discription.
+              Fruit Trivia Game that lets user guess fruit based on discription.
             </p>
             <a href="#" className="btn btn-dark">
               visit
