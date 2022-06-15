@@ -11,7 +11,7 @@ function Design() {
           className="card  m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
         >
-          <img src="public/images/portfolio.jpg" className="card-img-top" alt="..."/>
+          <img src="/images/portfolio.jpg" className="card-img-top border border-dark" alt="..."/>
           <div className="card-body">
             <h5 className="card-title">Portfolio Website</h5>
             <p className="card-text">
@@ -26,7 +26,7 @@ function Design() {
           className="card m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
         >
-          <img src="public/images/portfolio.jpg" className="card-img-top" alt="..."/>
+          <img src="/images/LandingPage.jpg" className="card-img-top border border-dark" alt="..."/>
           <div className="card-body">
             <h5 className="card-title">Bootstrap Website</h5>
             <p className="card-text">
@@ -50,12 +50,11 @@ function Design() {
           className="card  m-5 rounded-3 border border-dark "
           style={{ width: "20rem" }}
         >
-          <img src="..." className="card-img-top" alt="..."/>
+          <img src="/images/simon.jpg" className="card-img-top border border-dark" alt="..."/>
           <div className="card-body">
-            <h5 className="card-title">Portfolio Website</h5>
+            <h5 className="card-title">Simon Game Website</h5>
             <p className="card-text">
-              A design for an animated portfolio site using React JS and Framer
-              Motion.
+              A minimally designed version of the Simon game. 
             </p>
             <a href="#" className="btn btn-dark">
               visit
@@ -66,11 +65,11 @@ function Design() {
           className="card m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
         >
-          <img src="public/images/simon.jpg" className="card-img-top" alt="..."/>
+          <img src="/images/fruitGame.jpg" className="card-img-top border border-dark" alt="..."/>
           <div className="card-body">
-            <h5 className="card-title">Simon Game Website</h5>
+            <h5 className="card-title">Fruit Trivia Website</h5>
             <p className="card-text">
-              A landing page layout design created using Bootstrap.
+              Fruit Trivia Game that lets user guess what fruit based on small discription.
             </p>
             <a href="#" className="btn btn-dark">
               visit
