@@ -54,7 +54,7 @@ function Design() {
           <div className="card-body">
             <h5 className="card-title">Simon Game Website</h5>
             <p className="card-text">
-              A minimally designed version of the Simon game. 
+              A minimally designed version of the classic game Simon. 
             </p>
             <a href="#" className="btn btn-dark">
               visit
