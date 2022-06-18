@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 
 export const ROUTES = {
   HOME: '/',
@@ -23,9 +23,9 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-           <a className= {navClass} aria-current="page" href="/">HOME</a>
-            <a className={navClass} href="/design">DESIGN</a>
-            <a className={navClass} href="/about">ABOUT</a>
+           <Link className= {navClass} aria-current="page" to="/">HOME</Link>
+            <Link className={navClass} to="/design">DESIGN</Link>
+            <Link className={navClass} to="/about">ABOUT</Link>
             
           </div>
         </div>
