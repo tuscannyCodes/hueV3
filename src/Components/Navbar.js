@@ -1,12 +1,13 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom';
+
 
 export const ROUTES = {
   HOME: '/',
   ABOUT: '/about',
   DESIGN: '/design',
   }
-
+let navClass = "nav-link fs-2 fw-bold";
+// i can add 'active' class to this via on click 
 
 function Navbar() {
   
@@ -22,9 +23,9 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active fs-2 fw-bold" aria-current="page" href="/" >HOME</a>
-            <a className="nav-link fs-2 fw-bold" href="/design">DESIGN</a>
-            <a className="nav-link fs-2 fw-bold" href="/about">ABOUT</a>
+           <a className= {navClass} aria-current="page" href="/">HOME</a>
+            <a className={navClass} href="/design">DESIGN</a>
+            <a className={navClass} href="/about">ABOUT</a>
             
           </div>
         </div>
