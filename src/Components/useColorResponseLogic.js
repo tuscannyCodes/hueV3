@@ -23,6 +23,7 @@ const useColorResponseLogic = (response, setResponse) => {
           getColorsResponse: function () {
             // these are rsponses to user asking about colors
             if (userInput.includes(colors.theColors[0])) {
+                document.body.style = 'background: firebrick !important;';
               setResponse("Its getting hot in here");
             }
             if (userInput.includes(colors.theColors[1])) {
