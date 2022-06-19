@@ -61,7 +61,7 @@ const useColorResponseLogic = (response, setResponse) => {
               }
               if (userInput.includes(colors.theColors[8])) {
                 document.body.style = 'background: sienna !important;';
-                setResponse("Mmm chocolate :P");
+                setResponse("Chocolate :P");
               }
               if (userInput.includes(colors.theColors[9])) {
                 document.body.style = 'background: #262626 !important;'

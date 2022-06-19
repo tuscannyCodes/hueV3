@@ -8,7 +8,7 @@ const useGreetingsLogic = (response, setResponse) => {
       let userInput = document.getElementById("mainInputBox").value;
       // greetings object
       const greetings = {
-        greets: ["hello", "hi", "hey", "good morning", "goodbye", "yo"],
+        greets: ["hello", "hi", "hey", "good morning", "goodbye", "yo","howdy", "good afternoon"],
         responses: [
           "hello",
           "hello there",
@@ -16,6 +16,7 @@ const useGreetingsLogic = (response, setResponse) => {
           "hi",
           "whats up?",
           "yo",
+          
         ],
         getGreetResponse: function () {
           // if user does not type anything

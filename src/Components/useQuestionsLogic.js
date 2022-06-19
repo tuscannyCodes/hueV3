@@ -11,6 +11,10 @@ const useQuestionsLogic = (response, setResponse) => {
           theQuestions: [
         "your name",  
           "old are you", 
+          " doing",
+          "who are you", 
+          "are you human",
+          "going on",
           ],
           
           getQuestionResponse: function () {
@@ -20,6 +24,18 @@ const useQuestionsLogic = (response, setResponse) => {
             }
             if (userInput.includes(questions.theQuestions[1])) {
               setResponse("Ive been in development for 3 years");
+            }
+            if (userInput.includes(questions.theQuestions[2])) {
+              setResponse("Im being a robot!");
+            }
+            if (userInput.includes(questions.theQuestions[3])) {
+              setResponse("Im Hugh.");
+            }
+            if (userInput.includes(questions.theQuestions[4])) {
+              setResponse("Im a chatbot. My name is Hugh.");
+            }
+            if (userInput.includes(questions.theQuestions[5])) {
+              setResponse("The usual.");
             }
           }, // getGreetResponse method END
         }; // greeting object END
