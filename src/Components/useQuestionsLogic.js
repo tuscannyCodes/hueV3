@@ -9,8 +9,8 @@ const useQuestionsLogic = (response, setResponse) => {
         // greetings object
         const questions = {
           theQuestions: [
-        " your name",  
-          " old are you", 
+        "your name",  
+          "old are you", 
           ],
           
           getQuestionResponse: function () {
