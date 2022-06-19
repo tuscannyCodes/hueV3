@@ -3,6 +3,7 @@ import useGreetingsLogic from "./useGreetingsLogic";
 import useTimeResponseLogic from "./useTimeResponseLogic";
 import useThanksLogic from "./useThanksLogic";
 import useQuestionsLogic from "./useQuestionsLogic";
+import useColorResponseLogic from "./useColorResponseLogic";
 const useFn2Logic = () => {
   // This controls the state for the text being displayed
   let dynamicTime;
@@ -14,6 +15,7 @@ const useFn2Logic = () => {
   const {ThanksCallbackHandler} = useThanksLogic(setResponse);
   const { timeResponseCallbackHandler } = useTimeResponseLogic(setResponse);
   const { responseCallbackHandler } = useGreetingsLogic(response,setResponse);
+  const { colorResponseCallbackHandler} = useColorResponseLogic(response, setResponse);
   // callback function to place function inside of fn1
   function fn2CallbackHandler() {
     function fn2() {
@@ -30,6 +32,7 @@ const useFn2Logic = () => {
       responseCallbackHandler();
       ThanksCallbackHandler();
       questionsCallbackHandler();
+      colorResponseCallbackHandler();
     }
 
     fn2();

@@ -1,6 +1,9 @@
 body {
   /* overflow: hidden; */
+ 
 }
+
+
 
 /* general styles */
 
@@ -204,7 +207,15 @@ justify-content: center;
   .navbar {
     left:0;
   }
+.HueText-container{
 
+  margin-bottom: 10vh;
+}
+
+.HueText{
+justify-content: center;
+  font-size: 40px;
+}
   
 
 }
