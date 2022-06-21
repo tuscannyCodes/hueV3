@@ -69,7 +69,7 @@ const useColorResponseLogic = (response, setResponse) => {
               }
               if (userInput.includes(colors.theColors[10])) {
                 document.body.style = 'background: floralwhite !important;'
-                console.log(userInput.value)
+                console.log(userInput)
                 setResponse("blank.");
               }
 
