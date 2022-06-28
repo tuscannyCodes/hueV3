@@ -24,7 +24,30 @@ const useFn2Logic = () => {
   function fn2CallbackHandler() {
     function fn2() {
       let userInput = document.getElementById("mainInputBox").value;
-
+      // Use this array to check possible entries for search functionality
+      let input= [
+          "hello" /* Greetings Responses START*/,
+          "hi",
+          "hey",
+          "good morning",
+          "goodbye",
+          "yo",
+          "howdy",
+          "good afternoon" /* Greetings Responses END */,
+          "your name" /* Questions Responses START */,
+          "old are you",
+          " doing",
+          "who are you",
+          "are you human",
+          "going on" /* Questions Responses END */,
+          "remind me to " /* Reminder Response */,
+          "welcome" /* Thanks Responses START */,
+          "you are welcome",
+          "dont mention it",
+          "no problem",
+          "you're welcome" /* Thanks Responses END */,
+          "time" /* Time Response END */,
+        ]
       if (userInput.includes(" time")) {
         console.log("timer");
         dynamicTime = setInterval(timeResponseCallbackHandler, 50);
@@ -33,16 +56,22 @@ const useFn2Logic = () => {
         // console.log(userInput);
         clearInterval(dynamicTime);
       }
+     
+     
       responseCallbackHandler();
       ThanksCallbackHandler();
       questionsCallbackHandler();
       colorResponseCallbackHandler();
-      reminderCallbackHandler();
-      // searchResponseCallbackHandler();
-    }
+      reminderCallbackHandler()
+      searchResponseCallbackHandler();
+     
+      
+      
+      
+    };
 
     fn2();
-  }
+  };
   return { fn2CallbackHandler, response, setResponse };
 };
 

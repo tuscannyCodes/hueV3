@@ -1,3 +1,6 @@
+// need to try moving this up? 
+
+
 // importing state from main logical component "useFn2Logic"
 const useSearchResponseLogic = (response, setResponse) => {
   // callback function to place function inside of fn2
@@ -30,19 +33,31 @@ const useSearchResponseLogic = (response, setResponse) => {
           "no problem",
           "you're welcome" /* Thanks Responses END */,
           "time" /* Time Response END */,
+          "red",  
+          "blue", 
+          "purple", 
+          "green", 
+          "orange",
+          "yellow",
+          "pink",
+          "grey",
+          "brown",
+          "black",
+          "white",
         ],
         
         
         getSearchResponse: function () {
           // if user input does not have a programed response
-          if (userInput) {
+          
+          if (!searchFunctionality.input.includes(userInput)) {
             console.log(typeof userInput)
             console.log(userInput)
             console.log(searchFunctionality.input)
             console.log(searchFunctionality.input.includes(!userInput))
             setResponse("I dont understand this. Should I do a search for " + {userInput} + "?");
           } // if user input does not have a programed response END
-
+        
         }, // getSerchResponse method END
       }; // greeting object END
       searchFunctionality.getSearchResponse();
