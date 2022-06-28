@@ -5,6 +5,7 @@ import useThanksLogic from "./useThanksLogic";
 import useQuestionsLogic from "./useQuestionsLogic";
 import useColorResponseLogic from "./useColorResponseLogic";
 import useReminderLogic from "./useReminderLogic";
+import useSearchResponseLogic from "./useSearchResponseLogic";
 const useFn2Logic = () => {
   // This controls the state for the text being displayed
   let dynamicTime;
@@ -18,6 +19,7 @@ const useFn2Logic = () => {
   const { responseCallbackHandler } = useGreetingsLogic(response,setResponse);
   const { colorResponseCallbackHandler} = useColorResponseLogic(response, setResponse);
   const { reminderCallbackHandler } = useReminderLogic(response, setResponse);
+  const { searchResponseCallbackHandler} = useSearchResponseLogic(response, setResponse);
   // callback function to place function inside of fn1
   function fn2CallbackHandler() {
     function fn2() {
@@ -28,7 +30,7 @@ const useFn2Logic = () => {
         dynamicTime = setInterval(timeResponseCallbackHandler, 50);
         //*this set interval is not being cleared
       } else {
-        console.log(userInput);
+        // console.log(userInput);
         clearInterval(dynamicTime);
       }
       responseCallbackHandler();
@@ -36,6 +38,7 @@ const useFn2Logic = () => {
       questionsCallbackHandler();
       colorResponseCallbackHandler();
       reminderCallbackHandler();
+      // searchResponseCallbackHandler();
     }
 
     fn2();
