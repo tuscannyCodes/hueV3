@@ -25,8 +25,21 @@ const useColorResponseLogic = (response, setResponse) => {
           "white",
            ],
 
+          // specs: [
+          //   { query: 'red', background: 'firebrick', response: ''},
+          //   { query: 'blue', background: 'cadetblue'},
+          // ],
+
           getColorsResponse: function () {
             // these are rsponses to user asking about colors
+
+            // for (const spec of colors.specs) {
+            //   if (userInput.includes(spec.query)){
+            //     document.body.style = 'background: ' + spec.background + ' !important;';
+
+            //   }
+            // }
+
             if (userInput.includes(colors.theColors[0])) {
                 document.body.style = 'background: firebrick !important;';
               setResponse("Its getting hot in here");

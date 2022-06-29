@@ -49,15 +49,18 @@ const useSearchResponseLogic = (response, setResponse) => {
         
         getSearchResponse: function () {
           // if user input does not have a programed response
+          // debugger
+          for (let keyword of searchFunctionality.input) {
+
+            if (userInput.includes(!keyword)) {
+              console.log(userInput.includes(!keyword)) /*This returns false when entering a keyword? */
+              console.log(userInput.includes(keyword))
+              setResponse("I dont understand this. Should I do a search for " + {userInput} + "?");
+            } // if user input does not have a programed response END
           
-          if (!searchFunctionality.input.includes(userInput)) {
-            console.log(typeof userInput)
-            console.log(userInput)
-            console.log(searchFunctionality.input)
-            console.log(searchFunctionality.input.includes(!userInput))
-            setResponse("I dont understand this. Should I do a search for " + {userInput} + "?");
-          } // if user input does not have a programed response END
-        
+
+          }
+          
         }, // getSerchResponse method END
       }; // greeting object END
       searchFunctionality.getSearchResponse();
