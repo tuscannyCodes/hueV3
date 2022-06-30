@@ -12,7 +12,7 @@ The initial functionality of Hugh was to change into all of these fun colors whe
 
 ## This is a project that is constantly updated
 
-Im always adding things to improve the conversational abilities of this chatbot and improve the experience of anyone the may use it. Previous versions of Hugh include capabilities that are missing in this current version; and I am working on incorperating those elements while adding compleatly new elements as well. Whenever I learn something new while coding other projects, I try my best to incorperate that new knowlage into this project; not only to make Hugh better, but also as a way of practicing what Ive learned. Of course, each adddition to Hugh is implmented carefully and with a level of nuance.
+Im always adding things to improve the conversational abilities of this chatbot and improve the experience of anyone that may use it. Previous versions of Hugh include capabilities that are missing in this current version; and I am working on incorperating those elements while adding compleatly new elements as well. Whenever I learn something new while coding other projects, I try my best to incorperate that new knowlage into this project; not only to make Hugh better, but also as a way of practicing what Ive learned. Of course, each adddition to Hugh is implmented carefully and with a level of nuance.
 
 ### This current version
 
