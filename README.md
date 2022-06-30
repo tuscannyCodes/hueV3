@@ -10,7 +10,7 @@ This version of Hugh is built using React Js, Bootstrap and Framer Motion (also 
 
 One of the first things that I learned how to do when I first started working on this project was to dynamically change the background color of the webpage by entering color names into the input field. This very facinated to me and really got me going! It was such a magical idea to be able to effect a program with text in such a way! This is where the name 'Hue' derives from. Somwhere along the line, it was decided to change 'Hue' to 'Hugh'.
 
-The initial functionality of Hugh was to change into all of these fun colors when the user types in 'red' or 'blue' or 'green' etc.. Simple enough right? Hahaha, this was very cool to me at the time; and honestly, it still is! Among the many things you can communicate to Hugh, you may still ask to change into all sorts of fun colors. This is a simple request for this program, but it is a nod the humble foundations that originally started this project in the beginning of development.
+The initial functionality of Hugh was to change into all of these fun colors when the user types in 'red' or 'blue' or 'green' etc.. Simple enough right? Hahaha, this was very cool to me at the time; and honestly, it still is! Among the many things you can communicate to Hugh, you may still ask to change into all sorts of colors. This is a simple request for this program, but it is a nod the humble foundations that originally started this project in the beginning of development.
 
 ## This is a project that is constantly updated
 
