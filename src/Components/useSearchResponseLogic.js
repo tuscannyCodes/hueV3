@@ -1,3 +1,5 @@
+
+
 // need to try moving this up?
 
 // importing state from main logical component "useFn2Logic"
@@ -27,13 +29,10 @@ const useSearchResponseLogic = (response, setResponse) => {
           "are you human",
           "going on", /* Questions Responses END */
           "remind me to ", /* Reminder Response */
-          "welcome", /* Thanks Responses START */
-          "you are welcome",
-          "dont mention it",
-          "no problem",
-          "you're welcome", /* Thanks Responses END */
+          "thanks",  /* Thanks Responses START */
+          "thank you",/* Thanks Responses END */
           "time", /* Time Response END */
-          "red",
+          "red", /* color Responses start */
           "blue",
           "purple",
           "green",
@@ -43,7 +42,7 @@ const useSearchResponseLogic = (response, setResponse) => {
           "grey",
           "brown",
           "black",
-          "white",
+          "white",/* color Responses END */
         ],
 
         getSearchResponse: function () {
