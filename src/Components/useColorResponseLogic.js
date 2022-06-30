@@ -1,5 +1,3 @@
-
-
 // importing state from main logical component "useFn2Logic"
 const useColorResponseLogic = (response, setResponse) => {
     // callback function to place function inside of fn2
@@ -77,7 +75,7 @@ const useColorResponseLogic = (response, setResponse) => {
                 setResponse("Chocolate :P");
               }
               if (userInput.includes(colors.theColors[9])) {
-                document.body.style = 'background: #262626 !important;'
+                document.body.style = 'background: #262626 !important;';
                 setResponse("Dark");
               }
               if (userInput.includes(colors.theColors[10])) {
