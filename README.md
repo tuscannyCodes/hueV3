@@ -4,7 +4,7 @@ Meet Hugh, one of my favorite ongoing projects, and personal assistant chatbot. 
 
 This version of Hugh is built using React Js, Bootstrap and Framer Motion (also prototyped in Figma). It has always been a primary concern when building Hugh, to make the user interface 'toy-like' while expanding the complexity of application under the hood.
 
-![Hugh project](/images/hugh.jpg)
+![Hugh project](./images/hugh.jpg)
 
 ## Colors
 
