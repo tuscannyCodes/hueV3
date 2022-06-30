@@ -28,7 +28,8 @@ const useSearchResponseLogic = (response, setResponse) => {
           "who are you",
           "are you human",
           "going on", /* Questions Responses END */
-          "remind me to ", /* Reminder Response */
+          "remind me to ",/* Reminder Response START*/
+          " mins", /* Reminder Response END */
           "thanks",  /* Thanks Responses START */
           "thank you",/* Thanks Responses END */
           "time", /* Time Response END */
