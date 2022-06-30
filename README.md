@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Hugh ChatBot Version 3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Meet Hugh, one of my favorite ongoing projects, and personal assistant chatbot. I started building Hugh as soon as I started learning HTML, CSS and JavaScript a few years ago. Over time Ive reworked and rebuilt Hugh many times, and in this current iteration, Ive decided to make this project my portfolio website.
 
-## Available Scripts
+This version of Hugh is built using React Js, Bootstrap and Framer Motion (also prototyped in Figma). It has always been a primary concern when building Hugh, to make the user interface 'toy-like' while expanding the complexity of application under the hood.
 
-In the project directory, you can run:
+## Colors
 
-### `npm start`
+One of the first things that I learned how to do when I first started working on this project was to dynamically change the background color of the webpage by entering color names into the input field. This very facinated to me and really got me going! It was such a magical idea to be able to effect a program with text in such a way! This is where the name 'Hue' derives from. Somwhere along the line, it was decided to change 'Hue' to 'Hugh'.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The initial functionality of Hugh was to change into all of these fun colors when the user types in 'red' or 'blue' or 'green' etc.. Simple enough right? Hahaha, this was very cool to me at the time; and honestly, it still is! Among the many things you can communicate to Hugh, you may still ask to change into all sorts of fun colors. This is a simple request for this program, but it is a nod the humble foundations that originally started this project in the beginning of development.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## This is a project that is constantly updated
 
-### `npm test`
+Im always adding things to improve the conversational abilities of this chatbot and improve the experience of anyone the may use it. Previous versions of Hugh include capabilities that are missing in this current version; and I am working on incorperating those elements while adding compleatly new elements as well. Whenever I learn something new while coding other projects, I try my best to incorperate that new knowlage into this project; not only to make Hugh better, but also as a way of practicing what Ive learned. Of course, each adddition to Hugh is implmented carefully and with a level of nuance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### This current version
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This current version has been the longest running version of Hugh. It is also the most stable. I will build out this version until I require a need for a database. Once the need for a proper backend enviornment arises, I will begin version 4.
