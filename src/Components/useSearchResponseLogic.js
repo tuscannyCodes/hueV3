@@ -1,5 +1,4 @@
-// need to try moving this up? 
-
+// need to try moving this up?
 
 // importing state from main logical component "useFn2Logic"
 const useSearchResponseLogic = (response, setResponse) => {
@@ -10,6 +9,7 @@ const useSearchResponseLogic = (response, setResponse) => {
       // ***need to replace this with ref
       let userInput = document.getElementById("mainInputBox").value;
       // search object
+      let isPresent = false;
       const searchFunctionality = {
         input: [
           "hello" /* Greetings Responses START*/,
@@ -19,24 +19,24 @@ const useSearchResponseLogic = (response, setResponse) => {
           "goodbye",
           "yo",
           "howdy",
-          "good afternoon" /* Greetings Responses END */,
-          "your name" /* Questions Responses START */,
+          "good afternoon", /* Greetings Responses END */
+          "your name", /* Questions Responses START */
           "old are you",
           " doing",
           "who are you",
           "are you human",
-          "going on" /* Questions Responses END */,
-          "remind me to " /* Reminder Response */,
-          "welcome" /* Thanks Responses START */,
+          "going on", /* Questions Responses END */
+          "remind me to ", /* Reminder Response */
+          "welcome", /* Thanks Responses START */
           "you are welcome",
           "dont mention it",
           "no problem",
-          "you're welcome" /* Thanks Responses END */,
-          "time" /* Time Response END */,
-          "red",  
-          "blue", 
-          "purple", 
-          "green", 
+          "you're welcome", /* Thanks Responses END */
+          "time", /* Time Response END */
+          "red",
+          "blue",
+          "purple",
+          "green",
           "orange",
           "yellow",
           "pink",
@@ -45,22 +45,38 @@ const useSearchResponseLogic = (response, setResponse) => {
           "black",
           "white",
         ],
-        
-        
+
         getSearchResponse: function () {
           // if user input does not have a programed response
           // debugger
-          for (let keyword of searchFunctionality.input) {
 
-            if (userInput.includes(!keyword)) {
-              console.log(userInput.includes(!keyword)) /*This returns false when entering a keyword? */
-              console.log(userInput.includes(keyword))
-              setResponse("I dont understand this. Should I do a search for " + {userInput} + "?");
-            } // if user input does not have a programed response END
+          for (let i = 0; i <= searchFunctionality.input.length; i++) {
+            if (userInput.includes(searchFunctionality.input[i])) {
+              console.log(searchFunctionality.input.length);
+              isPresent = true;
+            }
+           }
+            if (isPresent === false) {
+              // console.log("idk")
+
+              setResponse("idontknow");
+
+              isPresent = false;
+            }
           
 
-          }
-          
+          // for (let keyword of searchFunctionality.input) {
+
+          //   if (userInput.includes(keyword.includes(userInput))) {
+          //     console.log(userInput.includes(!keyword)) /*This returns false when entering a keyword? */
+          //     console.log(userInput.includes(keyword))
+          //     console.log(keyword)
+          //     console.log(typeof(userInput))
+          //     console.log(typeof(keyword))
+
+          //   } // if user input does not have a programed response END
+
+          // }
         }, // getSerchResponse method END
       }; // greeting object END
       searchFunctionality.getSearchResponse();
