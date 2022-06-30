@@ -4,6 +4,8 @@ Meet Hugh, one of my favorite ongoing projects, and personal assistant chatbot. 
 
 This version of Hugh is built using React Js, Bootstrap and Framer Motion (also prototyped in Figma). It has always been a primary concern when building Hugh, to make the user interface 'toy-like' while expanding the complexity of application under the hood.
 
+![Hugh project](/images/hugh.jpg)
+
 ## Colors
 
 One of the first things that I learned how to do when I first started working on this project was to dynamically change the background color of the webpage by entering color names into the input field. This very facinated to me and really got me going! It was such a magical idea to be able to effect a program with text in such a way! This is where the name 'Hue' derives from. Somwhere along the line, it was decided to change 'Hue' to 'Hugh'.
