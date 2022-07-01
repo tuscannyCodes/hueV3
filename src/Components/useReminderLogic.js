@@ -5,7 +5,7 @@ const useReminderLogic = (response, setResponse) => {
     reminderResponse();
 
     function reminderResponse() {
-      let userInput = document.getElementById("mainInputBox").value;
+      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
       let reminderMode = false;
       let reminderCounter = 1;
       let thingToRemember = "";

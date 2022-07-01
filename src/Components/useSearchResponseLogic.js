@@ -9,7 +9,7 @@ const useSearchResponseLogic = (response, setResponse) => {
     searchResponse();
     function searchResponse() {
       // ***need to replace this with ref
-      let userInput = document.getElementById("mainInputBox").value;
+      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
       // search object
       let isPresent = false;
       const searchFunctionality = {
@@ -27,6 +27,7 @@ const useSearchResponseLogic = (response, setResponse) => {
           " doing",
           "who are you",
           "are you human",
+          "you from",
           "going on", /* Questions Responses END */
           "remind me to ",/* Reminder Response START*/
           " mins", /* Reminder Response END */

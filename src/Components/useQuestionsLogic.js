@@ -5,7 +5,7 @@ const useQuestionsLogic = (response, setResponse) => {
     getQuestions();
     function getQuestions() {
       // ***need to replace this with ref
-      let userInput = document.getElementById("mainInputBox").value;
+      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
       // greetings object
       const questions = {
         theQuestions: [
@@ -15,6 +15,7 @@ const useQuestionsLogic = (response, setResponse) => {
           "who are you",
           "are you human",
           "going on",
+          "you from",
         ],
 
         getQuestionResponse: function () {
@@ -37,6 +38,10 @@ const useQuestionsLogic = (response, setResponse) => {
           if (userInput.includes(questions.theQuestions[5])) {
             setResponse("The usual.");
           }
+          if (userInput.includes(questions.theQuestions[6])) {
+            setResponse("The Internet.");
+          }
+          
         }, // getGreetResponse method END
       }; // greeting object END
       questions.getQuestionResponse();

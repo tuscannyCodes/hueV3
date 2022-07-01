@@ -5,7 +5,7 @@ const useGreetingsLogic = (response, setResponse) => {
     getGreetings();
     function getGreetings() {
       // ***need to replace this with ref
-      let userInput = document.getElementById("mainInputBox").value;
+      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
       // greetings object
       const greetings = {
         greets: [

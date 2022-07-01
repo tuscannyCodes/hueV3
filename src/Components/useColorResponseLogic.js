@@ -5,7 +5,7 @@ const useColorResponseLogic = (response, setResponse) => {
       colorResponse();
 
       function colorResponse() {
-        let userInput = document.getElementById("mainInputBox").value;
+        let userInput = document.getElementById("mainInputBox").value.toLowerCase();
         // colors object START
             const colors = {
             theColors :

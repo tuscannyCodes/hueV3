@@ -5,7 +5,7 @@ const useThanksLogic = (setResponse) => {
     getThanks();
     function getThanks() {
       // ***need to replace this with ref
-      let userInput = document.getElementById("mainInputBox").value;
+      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
       // thanks object
       const thanks = {
         TheThanks: ["thanks", "thank you"],

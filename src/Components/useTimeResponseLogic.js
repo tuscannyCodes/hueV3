@@ -5,7 +5,7 @@ const useTimeResponseLogic = (setResponse) => {
     getTimeResponse();
     function getTimeResponse() {
       // ***need to replace this with ref
-      let userInput = document.getElementById("mainInputBox").value;
+      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
       //TIME RESPONSE
       if (userInput.includes("time")) {
         currentTime();
