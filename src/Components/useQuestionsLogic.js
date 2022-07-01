@@ -5,7 +5,9 @@ const useQuestionsLogic = (response, setResponse) => {
     getQuestions();
     function getQuestions() {
       // ***need to replace this with ref
-      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
+      let userInput = document
+        .getElementById("mainInputBox")
+        .value.toLowerCase();
       // greetings object
       const questions = {
         theQuestions: [
@@ -16,6 +18,10 @@ const useQuestionsLogic = (response, setResponse) => {
           "are you human",
           "going on",
           "you from",
+          "how you doing",
+          "what are you",
+          "happy",
+          "sad"
         ],
 
         getQuestionResponse: function () {
@@ -41,7 +47,18 @@ const useQuestionsLogic = (response, setResponse) => {
           if (userInput.includes(questions.theQuestions[6])) {
             setResponse("The Internet.");
           }
-          
+          if (userInput.includes(questions.theQuestions[7])) {
+            setResponse("Im doing great");
+          }
+          if (userInput.includes(questions.theQuestions[8])) {
+            setResponse("Im a program!");
+          }
+          if (userInput.includes(questions.theQuestions[9])) {
+            setResponse("happiness is many colors");
+          }
+          if (userInput.includes(questions.theQuestions[10])) {
+            setResponse("sadness is only temporary");
+          }
         }, // getGreetResponse method END
       }; // greeting object END
       questions.getQuestionResponse();

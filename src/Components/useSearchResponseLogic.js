@@ -1,5 +1,3 @@
-
-
 // need to try moving this up?
 
 // importing state from main logical component "useFn2Logic"
@@ -9,7 +7,9 @@ const useSearchResponseLogic = (response, setResponse) => {
     searchResponse();
     function searchResponse() {
       // ***need to replace this with ref
-      let userInput = document.getElementById("mainInputBox").value.toLowerCase();
+      let userInput = document
+        .getElementById("mainInputBox")
+        .value.toLowerCase();
       // search object
       let isPresent = false;
       const searchFunctionality = {
@@ -21,20 +21,20 @@ const useSearchResponseLogic = (response, setResponse) => {
           "goodbye",
           "yo",
           "howdy",
-          "good afternoon", /* Greetings Responses END */
-          "your name", /* Questions Responses START */
+          "good afternoon" /* Greetings Responses END */,
+          "your name" /* Questions Responses START */,
           "old are you",
           " doing",
           "who are you",
           "are you human",
           "you from",
-          "going on", /* Questions Responses END */
-          "remind me to ",/* Reminder Response START*/
-          " mins", /* Reminder Response END */
-          "thanks",  /* Thanks Responses START */
-          "thank you",/* Thanks Responses END */
-          "time", /* Time Response END */
-          "red", /* color Responses start */
+          "going on" /* Questions Responses END */,
+          "remind me to " /* Reminder Response START*/,
+          " mins" /* Reminder Response END */,
+          "thanks" /* Thanks Responses START */,
+          "thank you" /* Thanks Responses END */,
+          "time" /* Time Response END */,
+          "red" /* color Responses start */,
           "blue",
           "purple",
           "green",
@@ -44,7 +44,7 @@ const useSearchResponseLogic = (response, setResponse) => {
           "grey",
           "brown",
           "black",
-          "white",/* color Responses END */
+          "white" /* color Responses END */,
         ],
 
         getSearchResponse: function () {
@@ -56,15 +56,14 @@ const useSearchResponseLogic = (response, setResponse) => {
               console.log(searchFunctionality.input.length);
               isPresent = true;
             }
-           }
-            if (isPresent === false) {
-              // console.log("idk")
+          }
+          if (isPresent === false) {
+            // console.log("idk")
 
-              setResponse("idontknow");
+            setResponse("idontknow");
 
-              isPresent = false;
-            }
-          
+            isPresent = false;
+          }
 
           // for (let keyword of searchFunctionality.input) {
 

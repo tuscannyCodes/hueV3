@@ -44,7 +44,7 @@ const useColorResponseLogic = (response, setResponse) => {
             }
             if (userInput.includes(colors.theColors[1])) {
                 document.body.style = 'background: cadetblue !important;';
-              setResponse("Im feeling Blue.");
+              setResponse("Like water.");
             }
             if (userInput.includes(colors.theColors[2])) {
                 document.body.style = 'background: mediumpurple !important;';
