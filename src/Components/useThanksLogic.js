@@ -8,13 +8,14 @@ const useThanksLogic = (setResponse) => {
       let userInput = document.getElementById("mainInputBox").value.toLowerCase();
       // thanks object
       const thanks = {
-        TheThanks: ["thanks", "thank you"],
+        TheThanks: ["thanks", "thank you",],
         responses: [
           "welcome",
           "you are welcome",
           "dont mention it",
           "no problem",
           "you're welcome",
+          
         ],
         getThanksResponse: function () {
           // if statements for thanks Object

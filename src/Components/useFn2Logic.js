@@ -3,6 +3,7 @@ import useGreetingsLogic from "./useGreetingsLogic";
 import useTimeResponseLogic from "./useTimeResponseLogic";
 import useThanksLogic from "./useThanksLogic";
 import useQuestionsLogic from "./useQuestionsLogic";
+import useGeneralTalkLogic from "./useGeneralTalkLogic";
 import useColorResponseLogic from "./useColorResponseLogic";
 import useReminderLogic from "./useReminderLogic";
 import useSearchResponseLogic from "./useSearchResponseLogic";
@@ -18,6 +19,7 @@ const useFn2Logic = () => {
   const { timeResponseCallbackHandler } = useTimeResponseLogic(setResponse);
   const { responseCallbackHandler } = useGreetingsLogic(response,setResponse);
   const { colorResponseCallbackHandler} = useColorResponseLogic(response, setResponse);
+  const {generalTalkCallbackHandler} = useGeneralTalkLogic(response, setResponse);
   const { reminderCallbackHandler } = useReminderLogic(response, setResponse);
   const { searchResponseCallbackHandler} = useSearchResponseLogic(response, setResponse);
   // callback function to place function inside of fn1
@@ -48,7 +50,9 @@ const useFn2Logic = () => {
           "you're welcome" /* Thanks Responses END */,
           "time" /* Time Response END */,
         ]
-      if (userInput.includes(" time")) {
+
+        // *****this works instantly without dots.
+      if (userInput.includes("time")) {
         console.log("timer");
         dynamicTime = setInterval(timeResponseCallbackHandler, 50);
         //*this set interval is not being cleared
@@ -62,6 +66,7 @@ const useFn2Logic = () => {
       ThanksCallbackHandler();
       questionsCallbackHandler();
       colorResponseCallbackHandler();
+      generalTalkCallbackHandler();
       reminderCallbackHandler()
       searchResponseCallbackHandler();
      

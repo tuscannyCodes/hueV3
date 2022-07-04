@@ -33,7 +33,8 @@ const useSearchResponseLogic = (response, setResponse) => {
           " mins" /* Reminder Response END */,
           "thanks" /* Thanks Responses START */,
           "thank you" /* Thanks Responses END */,
-          "time" /* Time Response END */,
+          "time" /* Time Response START */,
+          "date" /* Time Response END */,
           "red" /* color Responses start */,
           "blue",
           "purple",
@@ -45,6 +46,9 @@ const useSearchResponseLogic = (response, setResponse) => {
           "brown",
           "black",
           "white" /* color Responses END */,
+          "ok" /* general Responses START */, 
+          "cool", 
+          "dope" /* general Responses END */,
         ],
 
         getSearchResponse: function () {
