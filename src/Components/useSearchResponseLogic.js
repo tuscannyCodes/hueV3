@@ -1,7 +1,7 @@
 // need to try moving this up?
 
 // importing state from main logical component "useFn2Logic"
-const useSearchResponseLogic = (response, setResponse) => {
+const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) => {
   // callback function to place function inside of fn2
   function searchResponseCallbackHandler() {
     searchResponse();
@@ -67,6 +67,11 @@ const useSearchResponseLogic = (response, setResponse) => {
             setResponse("idontknow");
 
             isPresent = false;
+          }
+          // this is to also check if user didnt say anything but not 'includes':  "" or " ".
+          if(userInput === "" || " ") {
+
+            responseCallbackHandler();
           }
 
           // for (let keyword of searchFunctionality.input) {
