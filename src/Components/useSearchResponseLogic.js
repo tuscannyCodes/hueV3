@@ -52,6 +52,17 @@ const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) 
           "cool", 
           "dope" /* general Responses END */,
         ],
+        responses: [
+          "I dont understand this.",
+          "??????",
+          "Can not compute.",
+          "My programmer has not given me a response to that.",
+          "Im not sure what that means.",
+          "Sorry. I dont get it.",
+          "???",
+          "Confused."
+          
+        ],
 
         getSearchResponse: function () {
           // if user input does not have a programed response
@@ -66,7 +77,7 @@ const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) 
           if (isPresent === false) {
             // console.log("idk")
 
-            setResponse("idontknow");
+            setResponse(searchFunctionality.responses[Math.floor(Math.random() * searchFunctionality.responses.length)]);
 
             isPresent = false;
           }
