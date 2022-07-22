@@ -21,7 +21,8 @@ const useQuestionsLogic = (response, setResponse) => {
           "how you doing",
           "what are you",
           "happy",
-          "sad"
+          "sad",
+          "how are you",
         ],
 
         getQuestionResponse: function () {
@@ -58,6 +59,9 @@ const useQuestionsLogic = (response, setResponse) => {
           }
           if (userInput.includes(questions.theQuestions[10])) {
             setResponse("sadness is only temporary");
+          }
+          if (userInput.includes(questions.theQuestions[11])) {
+            setResponse("Im doing great");
           }
         }, // getGreetResponse method END
       }; // greeting object END

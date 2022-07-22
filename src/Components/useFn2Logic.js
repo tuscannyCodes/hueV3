@@ -7,6 +7,7 @@ import useGeneralTalkLogic from "./useGeneralTalkLogic";
 import useColorResponseLogic from "./useColorResponseLogic";
 import useReminderLogic from "./useReminderLogic";
 import useSearchResponseLogic from "./useSearchResponseLogic";
+import useDateResponseLogic from "./useDateResponseLogic";
 const useFn2Logic = () => {
   // This controls the state for the text being displayed
   let dynamicTime;
@@ -22,6 +23,7 @@ const useFn2Logic = () => {
   const {generalTalkCallbackHandler} = useGeneralTalkLogic(response, setResponse);
   const { reminderCallbackHandler } = useReminderLogic(response, setResponse);
   const { searchResponseCallbackHandler} = useSearchResponseLogic(response, setResponse,responseCallbackHandler);
+  const {dateResponseCallbackHandler} = useDateResponseLogic(response, setResponse)
   // callback function to place function inside of fn1
   function fn2CallbackHandler() {
     function fn2() {
@@ -69,7 +71,7 @@ const useFn2Logic = () => {
       generalTalkCallbackHandler();
       reminderCallbackHandler()
       searchResponseCallbackHandler();
-     
+      dateResponseCallbackHandler();
       
       
       

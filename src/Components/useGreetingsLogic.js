@@ -14,6 +14,8 @@ const useGreetingsLogic = (response, setResponse) => {
           "hey",
           "good morning",
           "goodbye",
+          "what's",
+          "whats",
           // "yo",
           "howdy",
           "good afternoon",
