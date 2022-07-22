@@ -28,10 +28,18 @@ const useGreetingsLogic = (response, setResponse) => {
           "whats up?",
           "yo",
         ],
+        saidNothingResponse: [
+          // I could add questions here. 
+          "you didnt say anything",
+          "you said nothing.",
+          "please enter something",
+          "you should say something",
+        ],
+
         getGreetResponse: function () {
           // if user does not type anything
           if (userInput === "" || userInput === " ") {
-            setResponse("you didnt say anything");
+            setResponse(greetings.saidNothingResponse[Math.floor(Math.random() * greetings.saidNothingResponse.length)]);
 
           } // if user does not type anything END
 
