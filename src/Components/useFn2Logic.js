@@ -7,51 +7,31 @@ import useGeneralTalkLogic from "./useGeneralTalkLogic";
 import useColorResponseLogic from "./useColorResponseLogic";
 import useReminderLogic from "./useReminderLogic";
 import useSearchResponseLogic from "./useSearchResponseLogic";
-import useDateResponseLogic from "./useDateResponseLogic";
+
 const useFn2Logic = () => {
   // This controls the state for the text being displayed
   let dynamicTime;
-
+  // DISCARDED AUDIO*********
+  // let audio = [new Audio('hughTalk1.mp3'),new Audio('hughTalk2.mp3'),new Audio('hughTalk3.mp3'),new Audio('hughTalk4.mp3')]
+  // DISCARDED AUDIO*********
   // STATE
   const [response, setResponse] = useState(".__.");
   // STATE END
-  const {questionsCallbackHandler} = useQuestionsLogic(response, setResponse);
+  const {questionsCallbackHandler} = useQuestionsLogic(response, setResponse,);
   const {ThanksCallbackHandler} = useThanksLogic(setResponse);
   const { timeResponseCallbackHandler } = useTimeResponseLogic(setResponse);
-  const { responseCallbackHandler } = useGreetingsLogic(response,setResponse);
+  const { responseCallbackHandler } = useGreetingsLogic(response,setResponse,);
   const { colorResponseCallbackHandler} = useColorResponseLogic(response, setResponse);
   const {generalTalkCallbackHandler} = useGeneralTalkLogic(response, setResponse);
   const { reminderCallbackHandler } = useReminderLogic(response, setResponse);
   const { searchResponseCallbackHandler} = useSearchResponseLogic(response, setResponse,responseCallbackHandler);
-  const {dateResponseCallbackHandler} = useDateResponseLogic(response, setResponse)
+  
   // callback function to place function inside of fn1
   function fn2CallbackHandler() {
     function fn2() {
       let userInput = document.getElementById("mainInputBox").value;
       // Use this array to check possible entries for search functionality
-      let input= [
-          "hello" /* Greetings Responses START*/,
-          "hi",
-          "hey",
-          "good morning",
-          "goodbye",
-          "yo",
-          "howdy",
-          "good afternoon" /* Greetings Responses END */,
-          "your name" /* Questions Responses START */,
-          "old are you",
-          " doing",
-          "who are you",
-          "are you human",
-          "going on" /* Questions Responses END */,
-          "remind me to " /* Reminder Response */,
-          "welcome" /* Thanks Responses START */,
-          "you are welcome",
-          "dont mention it",
-          "no problem",
-          "you're welcome" /* Thanks Responses END */,
-          "time" /* Time Response END */,
-        ]
+
 
         // *****this works instantly without dots.
       if (userInput.includes("time")) {
@@ -68,10 +48,11 @@ const useFn2Logic = () => {
       ThanksCallbackHandler();
       questionsCallbackHandler();
       colorResponseCallbackHandler();
+      //*/ GENERAL RESPONSE ALSO HAS DATE RESPONSE 
       generalTalkCallbackHandler();
       reminderCallbackHandler()
       searchResponseCallbackHandler();
-      dateResponseCallbackHandler();
+     
       
       
       

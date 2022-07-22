@@ -32,6 +32,7 @@ const useGreetingsLogic = (response, setResponse) => {
           // if user does not type anything
           if (userInput === "" || userInput === " ") {
             setResponse("you didnt say anything");
+
           } // if user does not type anything END
 
           // if statements for GREETINGS Object
@@ -43,6 +44,7 @@ const useGreetingsLogic = (response, setResponse) => {
                   Math.floor(Math.random() * greetings.responses.length)
                 ]
               );
+             
             }
           }
           // these are for more specific greetings

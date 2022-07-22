@@ -63,6 +63,7 @@ const useQuestionsLogic = (response, setResponse) => {
           if (userInput.includes(questions.theQuestions[11])) {
             setResponse("Im doing great");
           }
+          
         }, // getGreetResponse method END
       }; // greeting object END
       questions.getQuestionResponse();
