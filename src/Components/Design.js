@@ -11,7 +11,7 @@ function Design() {
           className="card  m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
         >
-          <img src="/images/portfolio.jpg" className="card-img-top border border-dark" alt="..."/>
+          <img src="public/images/portfolio.jpg" className="card-img-top border border-dark" alt="..."/>
           <div className="card-body">
             <h5 className="card-title">Portfolio Website</h5>
             <p className="card-text">
