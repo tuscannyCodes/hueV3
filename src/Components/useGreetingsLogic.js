@@ -34,6 +34,7 @@ const useGreetingsLogic = (response, setResponse) => {
           "you said nothing.",
           "please enter something",
           "you should say something",
+          "?",
         ],
 
         getGreetResponse: function () {

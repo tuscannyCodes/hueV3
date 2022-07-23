@@ -16,6 +16,11 @@ function About() {
 
 <p className="fs-5">This version of Hugh is built using <span className="fw-bold">React Js, Bootstrap </span>and <span className="fw-bold">Framer Motion</span> (also prototyped in <span className="fw-bold">Figma</span>). It has always been a primary concern when building Hugh, to make the user interface 'toy-like' while expanding the complexity of application under the hood. </p>
 
+
+<h1 className="fs-1 fw-bold fst-italic"><u>Contact me</u></h1>
+<p className="fs-5"><span className="fw-bold">Lets work together!</span></p>
+<p className="fs-5">E: tuscannypolk@gmail.com</p>
+
       </div>
 
 

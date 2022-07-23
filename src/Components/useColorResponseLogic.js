@@ -37,7 +37,7 @@ const useColorResponseLogic = (response, setResponse) => {
 
             //   }
             // }
-
+// Add multiple color responses. 
             if (userInput.includes(colors.theColors[0])) {
                 document.body.style = 'background: firebrick !important;';
               setResponse("Its getting hot in here");

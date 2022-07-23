@@ -24,7 +24,7 @@ const useQuestionsLogic = (response, setResponse) => {
           "sad",
           "how are you",
         ],
-
+// add multiple responses to questions.
         getQuestionResponse: function () {
           // these are for more specific questions
           if (userInput.includes(questions.theQuestions[0])) {
