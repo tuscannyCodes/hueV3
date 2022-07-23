@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hueV3/static/css/main.d661f250.css",
+    "main.js": "/hueV3/static/js/main.48e235d1.js",
+    "static/js/787.c021a8fc.chunk.js": "/hueV3/static/js/787.c021a8fc.chunk.js",
+    "index.html": "/hueV3/index.html",
+    "main.d661f250.css.map": "/hueV3/static/css/main.d661f250.css.map",
+    "main.48e235d1.js.map": "/hueV3/static/js/main.48e235d1.js.map",
+    "787.c021a8fc.chunk.js.map": "/hueV3/static/js/787.c021a8fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d661f250.css",
+    "static/js/main.48e235d1.js"
+  ]
+}
