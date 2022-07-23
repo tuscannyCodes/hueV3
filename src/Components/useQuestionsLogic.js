@@ -23,6 +23,7 @@ const useQuestionsLogic = (response, setResponse) => {
           "happy",
           "sad",
           "how are you",
+          "where are you",
         ],
 // add multiple responses to questions.
         getQuestionResponse: function () {
@@ -62,6 +63,9 @@ const useQuestionsLogic = (response, setResponse) => {
           }
           if (userInput.includes(questions.theQuestions[11])) {
             setResponse("Im doing great");
+          }
+          if (userInput.includes(questions.theQuestions[12])) {
+            setResponse("Im inside the internet!");
           }
           
         }, // getGreetResponse method END
