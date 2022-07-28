@@ -17,6 +17,7 @@ const useGreetingsLogic = (response, setResponse) => {
           "what's",
           "whats",
           // "yo",
+          "sup",
           "howdy",
           "good afternoon",
         ],
@@ -53,7 +54,9 @@ const useGreetingsLogic = (response, setResponse) => {
                   Math.floor(Math.random() * greetings.responses.length)
                 ]
               );
-             
+             console.log(greetings.responses[
+              Math.floor(Math.random() * greetings.responses.length)
+            ])
             }
           }
           // these are for more specific greetings

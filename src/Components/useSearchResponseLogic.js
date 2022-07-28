@@ -21,6 +21,7 @@ const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) 
           "goodbye",
           // "yo",
           "howdy",
+          "sup",
           "good afternoon" /* Greetings Responses END */,
           "your name" /* Questions Responses START */,
           "old are you",
