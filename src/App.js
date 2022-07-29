@@ -38,7 +38,7 @@ function App() {
   // this is rendering the components
   return (
     <div className="App">
-      <Router basename="/hueV3">
+      <Router basename="hueV3">
         <Navbar />
         <Routes>
           {/* Home page */}
