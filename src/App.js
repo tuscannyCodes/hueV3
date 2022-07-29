@@ -1,3 +1,5 @@
+// To build for website run 'npm run deploy'
+
 import HueText from "./Components/HueText";
 import InputBox from "./Components/InputBox";
 import MainButton from "./Components/MainButton";

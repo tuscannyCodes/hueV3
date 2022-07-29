@@ -1,9 +1,7 @@
 body {
   /* overflow: hidden; */
- transition: .5s ease;
+  transition: 0.5s ease;
 }
-
-
 
 /* general styles */
 
@@ -12,23 +10,23 @@ body {
 .HueText-container {
   display: flex;
   height: 90px;
-  width:100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
   margin-top: 38vh;
 }
 
-.HueText{
+.HueText {
   cursor: default;
-font-size: 50px;
+  font-size: 50px;
   font-weight: bold;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; /* Non-prefixed version, currently
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome, Edge, Opera and Firefox */
 }
 /* Input box */
@@ -37,7 +35,6 @@ font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .InputBox {
@@ -141,61 +138,44 @@ font-size: 50px;
 /* Navbar START*/
 
 .navbar {
-top: 0;
-
-
+  top: 0;
 }
 
-.navContainer{
-
+.navContainer {
   display: flex;
-  Justify-content: center;
+  justify-content: center;
   align-items: center;
 }
-
-
 
 /* Navbar END */
 
 /* Design Page START */
 
-.designContainer{
-display: flex;
-justify-content: center; 
-  margin-top:20vh;
- 
-
-
+.designContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
 }
 
-.designContainer2{
+.designContainer2 {
   display: flex;
-  justify-content: center; 
-    
-   
-  
-  
-  }
+  justify-content: center;
+}
 
-.card{
-
+.card {
   filter: drop-shadow(5px 5px 10px rgb(118, 85, 2));
 }
 
-
-.card-img-top{
+.card-img-top {
   margin-top: 10px;
-  
 }
 
 /* Design Page END */
 
 /* About Page */
 
-.aboutText{
-
-
-  margin-top:20vh;
+.aboutText {
+  margin-top: 20vh;
   margin-bottom: 10vh;
 }
 
@@ -205,20 +185,15 @@ justify-content: center;
 
 @media only screen and (max-width: 992px) {
   .navbar {
-    left:0;
+    left: 0;
   }
-.HueText-container{
+  .HueText-container {
+    margin-bottom: 5vh;
+  }
 
-  margin-bottom: 5vh;
+  .HueText {
+    justify-content: center;
+    font-size: 40px;
+  }
+ 
 }
-
-.HueText{
-justify-content: center;
-  font-size: 40px;
-}
-  
-
-}
-
-
-
