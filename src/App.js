@@ -41,7 +41,8 @@ function App() {
         setResponse("._____.");
       }, 20000);
     }
-    resetFace();
+    // "resetFace function does not restart after each function call."
+    // resetFace();
   }; // end of fn1
 
   // this is rendering the components
