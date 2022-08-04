@@ -57,7 +57,8 @@ const useQuestionsLogic = (response, setResponse) => {
             setResponse(responses[Math.floor(Math.random() * responses.length)]);
           }
           if (userInput.includes(questions.theQuestions[8])) {
-            setResponse("Im a program!");
+            let responses = ["Im a program","A program","Source code.", "0's and 1's",]
+            setResponse(responses[Math.floor(Math.random() * responses.length)]);
           }
           if (userInput.includes(questions.theQuestions[9])) {
             setResponse("happiness is many colors");
