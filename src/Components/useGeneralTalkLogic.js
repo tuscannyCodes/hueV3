@@ -57,7 +57,7 @@ const useGeneralTalkLogic = (response, setResponse) => {
 
           if (userInput.includes(" date") || userInput.includes(" day")){
 
-setResponse(`Its ` + days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear())
+setResponse(`Its ` + days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+',' +' '+d.getFullYear())
 
           }
         }, // getGreetResponse method END

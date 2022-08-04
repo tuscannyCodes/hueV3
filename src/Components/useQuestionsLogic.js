@@ -24,6 +24,8 @@ const useQuestionsLogic = (response, setResponse) => {
           "sad",
           "how are you",
           "where are you",
+          " favorite color",
+          "are you alive",
         ],
 // add multiple responses to questions.
         getQuestionResponse: function () {
@@ -68,6 +70,17 @@ const useQuestionsLogic = (response, setResponse) => {
           // }
           if (userInput.includes(questions.theQuestions[12])) {
             setResponse("Im inside the internet!");
+          }
+          if (userInput.includes(questions.theQuestions[13])) {
+            let responses = ["My favorite color is Orange!","Its Orange!", "Orange! Orange! Orange!", "Orange.","Orange for sure."]
+
+            document.body.style = "background: orange !important;";
+
+            setResponse(responses[Math.floor(Math.random() * responses.length)]);
+          }
+          if (userInput.includes(questions.theQuestions[14])) {
+            let responses = ["Yes","Im a functioning program.", "Yes I am", "I think.","yes", "Of course","What kind of question is that?","yes",]
+            setResponse(responses[Math.floor(Math.random() * responses.length)]);
           }
           
         }, // getGreetResponse method END

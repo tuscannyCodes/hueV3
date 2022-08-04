@@ -11,6 +11,8 @@ const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) 
         .getElementById("mainInputBox")
         .value.toLowerCase();
       // search object
+
+      // maybe test againt special case if user input is 'what ' and not included in the inputs object  
       let isPresent = false;
       const searchFunctionality = {
         input: [
@@ -35,6 +37,7 @@ const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) 
           "where are you",
           "happy",
           "sad",
+          "are you alive",
           "how are you", /* Questions Responses END */,
           "remind me to " /* Reminder Response START*/,
           " mins" /* Reminder Response END */,
@@ -58,18 +61,18 @@ const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) 
           "cool", 
           "dope",
           "kanye west" /* general Responses END */,
+          " favorite color",
         ],
         responses: [
-          "I dont understand this.",
-          "??????",
-          "Can not compute.",
-          "My programmer has not given me a response to that.",
+          "Im not sure.",
+          "I dont know.",
+          "ok.",
           "Im not sure what that means.",
           "Sorry. I dont get it.",
           "???",
-          "Confused."
-          
-        ],
+          "Im confused.",
+          "sure."
+          ],
 
         getSearchResponse: function () {
           // if user input does not have a programed response

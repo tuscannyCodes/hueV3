@@ -35,6 +35,13 @@ function App() {
       console.log("fn1 fired");
       fn2CallbackHandler();
     }, 2600);
+
+    function resetFace() {
+      setTimeout(() => {
+        setResponse("._____.");
+      }, 20000);
+    }
+    resetFace();
   }; // end of fn1
 
   // this is rendering the components
@@ -42,6 +49,7 @@ function App() {
     <div className="App">
       <Router basename="/hueV3">
         <Navbar />
+
         <Routes>
           {/* Home page */}
           <Route
