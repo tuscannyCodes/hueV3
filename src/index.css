@@ -181,9 +181,9 @@ border-radius: 10px;
   justify-content: center;
 }
 
-.card {
+/* .card {
   filter: drop-shadow(5px 5px 10px rgb(118, 85, 2));
-}
+} */
 
 .card-img-top {
   margin-top: 10px;
