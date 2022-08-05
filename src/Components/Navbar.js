@@ -15,7 +15,8 @@ function Navbar() {
   return (
   
     <div className="navContainer">
-    <nav className="navbar navbar-expand-lg position-absolute ">
+      {/* position absolute goes below */}
+    <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

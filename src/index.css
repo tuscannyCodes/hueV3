@@ -206,6 +206,8 @@ border-radius: 10px;
   .navbar {
     left: 0;
   }
+
+  
   .HueText-container {
     margin-bottom: 5vh;
   }
@@ -218,5 +220,9 @@ border-radius: 10px;
   .MainButton{
     visibility: hidden;
   }
- 
+  .navContainer {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
 }
