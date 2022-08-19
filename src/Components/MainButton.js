@@ -22,9 +22,9 @@ function MainButton({ fn1, setResponse }) {
       }, 50);
     }
 
-    setTimeout(() => {
-      setResponse("._____.");
-    }, 1500);
+    // setTimeout(() => {
+    //   setResponse("._____.");
+    // }, 1500);
   });
   // *******************FUNNY FACE FUNCTION END**************************
 

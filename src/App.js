@@ -7,6 +7,7 @@ import useFn2Logic from "./Components/useFn2Logic";
 import Navbar, { ROUTES } from "./Components/Navbar";
 import About from "./Components/About";
 import Design from "./Components/Design";
+import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 function App() {
@@ -36,9 +37,6 @@ function App() {
       fn2CallbackHandler();
     }, 2600);
 
-    
-    // "resetFace function does not restart after each function call."
-    // resetFace();
   }; // end of fn1
 
   // this is rendering the components
@@ -70,7 +68,7 @@ function App() {
                 <InputBox />
                 <MainButton fn1={fn1} setResponse={setResponse} />
                 </motion.div>
-                  
+               
                   
               </>
             }
@@ -92,6 +90,7 @@ function App() {
     >
                   <Design />
                   </motion.div>
+                  
                 </div>
                 
               </>
@@ -118,6 +117,7 @@ function App() {
           />
           {/* About page END*/}
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

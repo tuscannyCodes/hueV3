@@ -26,6 +26,7 @@ const useQuestionsLogic = (response, setResponse) => {
           "where are you",
           " favorite color",
           "are you alive",
+          "soul"
         ],
 // add multiple responses to questions.
         getQuestionResponse: function () {
@@ -82,6 +83,9 @@ const useQuestionsLogic = (response, setResponse) => {
           if (userInput.includes(questions.theQuestions[14])) {
             let responses = ["Yes","Im a functioning program.", "Yes I am", "I think.","yes", "Of course","What kind of question is that?","yes",]
             setResponse(responses[Math.floor(Math.random() * responses.length)]);
+          }
+          if (userInput.includes(questions.theQuestions[15])) {
+            setResponse("No soul.");
           }
           
         }, // getGreetResponse method END

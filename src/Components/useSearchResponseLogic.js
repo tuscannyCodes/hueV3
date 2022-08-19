@@ -37,6 +37,7 @@ const useSearchResponseLogic = (response, setResponse, responseCallbackHandler) 
           "where are you",
           "happy",
           "sad",
+          "soul",
           "are you alive",
           "how are you", /* Questions Responses END */,
           "remind me to " /* Reminder Response START*/,
