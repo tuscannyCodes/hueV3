@@ -36,11 +36,7 @@ function App() {
       fn2CallbackHandler();
     }, 2600);
 
-    function resetFace() {
-      setTimeout(() => {
-        setResponse("._____.");
-      }, 20000);
-    }
+    
     // "resetFace function does not restart after each function call."
     // resetFace();
   }; // end of fn1
