@@ -1,3 +1,10 @@
+/* 
+ create a section of only the
+ text elements on the page to 
+ better access those elements.
+*/
+
+
 body {
   /* overflow: hidden; */
   transition: 0.5s ease;
@@ -11,6 +18,25 @@ body {
 
   border: none !important;
 }
+
+#navLink1{
+
+color: white;
+
+}
+
+#navLink2{
+
+  color:white;
+}
+
+#navLink3{
+
+
+  color:white;
+}
+
+
 .line{
   margin: 6px;
   
@@ -34,6 +60,7 @@ border-radius: 10px;
 }
 
 .HueText {
+  color:white;
   cursor: default;
   font-size: 50px;
   font-weight: bold;
@@ -55,7 +82,7 @@ border-radius: 10px;
 
 .InputBox {
   border: none;
-  border-radius: 10px;
+  border-radius:1px;
   text-align: center;
   font-size: 20px;
   width: 300px;

@@ -8,7 +8,7 @@ import Navbar, { ROUTES } from "./Components/Navbar";
 import About from "./Components/About";
 import Design from "./Components/Design";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { motion, AnimatePresence } from "framer-motion";
 function App() {
   const { fn2CallbackHandler, response, setResponse } = useFn2Logic();
   // this will be the main function that calls fn2 that calls other functions.
@@ -60,9 +60,22 @@ function App() {
             exact={true}
             element={
               <>
+              
+  
+              <motion.div
+      initial={{ translateY: -200 }}
+      animate={{ translateY: 0 }}
+      exit={{ translateY: 100 }}
+      transition={{ type: "spring", stiffness: 200 }}
+    >
+      
                 <HueText response={response} />
+                
                 <InputBox />
                 <MainButton fn1={fn1} setResponse={setResponse} />
+                </motion.div>
+                  
+                  
               </>
             }
           />
@@ -73,9 +86,18 @@ function App() {
             path={ROUTES.DESIGN}
             element={
               <>
+                  
                 <div>
+                  <motion.div
+      initial={{ translateY: -200 }}
+      animate={{ translateY: 0 }}
+      exit={{ translateY: 100 }}
+      transition={{ type: "spring", stiffness: 200 }}
+    >
                   <Design />
+                  </motion.div>
                 </div>
+                
               </>
             }
           />
@@ -86,7 +108,14 @@ function App() {
             element={
               <>
                 <div>
+                <motion.div
+      initial={{ translateY: -200 }}
+      animate={{ translateY: 0 }}
+      exit={{ translateY: 100 }}
+      transition={{ type: "spring", stiffness: 200 }}
+    >
                   <About />
+                  </motion.div>
                 </div>
               </>
             }
