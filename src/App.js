@@ -36,7 +36,6 @@ function App() {
       console.log("fn1 fired");
       fn2CallbackHandler();
     }, 2600);
-
   }; // end of fn1
 
   // this is rendering the components
@@ -54,22 +53,17 @@ function App() {
             exact={true}
             element={
               <>
-              
-  
-              <motion.div
-      initial={{ translateY: -200 }}
-      animate={{ translateY: 0 }}
-      exit={{ translateY: 100 }}
-      transition={{ type: "spring", stiffness: 200 }}
-    >
-      
-                <HueText response={response} />
-                
-                <InputBox />
-                <MainButton fn1={fn1} setResponse={setResponse} />
+                <motion.div
+                  initial={{ translateY: -200 }}
+                  animate={{ translateY: 0 }}
+                  exit={{ translateY: 100 }}
+                  transition={{ type: "spring", stiffness: 200 }}
+                >
+                  <HueText response={response} />
+
+                  <InputBox />
+                  <MainButton fn1={fn1} setResponse={setResponse} />
                 </motion.div>
-               
-                  
               </>
             }
           />
@@ -80,19 +74,16 @@ function App() {
             path={ROUTES.DESIGN}
             element={
               <>
-                  
                 <div>
                   <motion.div
-      initial={{ translateY: -200 }}
-      animate={{ translateY: 0 }}
-      exit={{ translateY: 100 }}
-      transition={{ type: "spring", stiffness: 200 }}
-    >
-                  <Design />
+                    initial={{ translateY: -200 }}
+                    animate={{ translateY: 0 }}
+                    exit={{ translateY: -200 }}
+                    transition={{ type: "spring", stiffness: 200 }}
+                  >
+                    <Design />
                   </motion.div>
-                  
                 </div>
-                
               </>
             }
           />
@@ -103,13 +94,13 @@ function App() {
             element={
               <>
                 <div>
-                <motion.div
-      initial={{ translateY: -200 }}
-      animate={{ translateY: 0 }}
-      exit={{ translateY: 100 }}
-      transition={{ type: "spring", stiffness: 200 }}
-    >
-                  <About />
+                  <motion.div
+                     initial={{ translateY: -200 }}
+                     animate={{ translateY: 100 }}
+                     exit={{ translateY: 100 }}
+                     transition={{ type: "spring", stiffness: 200 }}
+                  >
+                    <About />
                   </motion.div>
                 </div>
               </>
@@ -117,7 +108,7 @@ function App() {
           />
           {/* About page END*/}
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );

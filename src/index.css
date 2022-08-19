@@ -226,7 +226,7 @@ border-radius: 10px;
 
 }
 .aboutText {
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
@@ -234,7 +234,7 @@ border-radius: 10px;
 /* FOOTER */
 .footer {
 font-size: 2px !important;
-  margin-top:10vh;
+  margin-top:5vh;
 }
 
 /* MEDIA */
