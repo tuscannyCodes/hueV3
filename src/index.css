@@ -227,7 +227,7 @@ border-radius: 10px;
 }
 .aboutText {
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 25vh;
 }
 
 /* About Page END */
@@ -246,7 +246,7 @@ font-size: 2px !important;
 
   
   .HueText-container {
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
   }
 
   .HueText {
@@ -265,6 +265,6 @@ font-size: 2px !important;
 
   .footer {
 
-    margin-top:1vh;
+    margin-top:5vh;
   }
 }
