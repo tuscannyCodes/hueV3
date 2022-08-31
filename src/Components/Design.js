@@ -7,6 +7,9 @@ function Design() {
       
     <div className="container designContainer">
       <div className="row justify-content-center">
+        {/* I want to add a link for Web Design samples here.*/}
+        {/* <h1 className="text-center">Check out my Web Design Design</h1>  */}
+        
         <div
           className="card  m-5 rounded-3 border border-dark"
           style={{ width: "20rem" }}
