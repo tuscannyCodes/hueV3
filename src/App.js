@@ -7,8 +7,9 @@ import useFn2Logic from "./Components/useFn2Logic";
 import Navbar, { ROUTES } from "./Components/Navbar";
 import About from "./Components/About";
 import Design from "./Components/Design";
+import PageNotFound from "./Components/PageNotFound";
 import Footer from "./Components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Switch } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 function App() {
   const { fn2CallbackHandler, response, setResponse } = useFn2Logic();
@@ -43,9 +44,10 @@ function App() {
     <div className="App">
       <Router basename="/hueV3">
         <Navbar />
-
+        <switch>
         <Routes>
           {/* Home page */}
+          
           <Route
             // Old path
             // path={ROUTES.HOME}
@@ -107,7 +109,26 @@ function App() {
             }
           />
           {/* About page END*/}
+
+          <Route
+            path="*"
+            element={
+              <>
+                <div>
+                  <motion.div
+                     initial={{ translateY: -200 }}
+                     animate={{ translateY: 100 }}
+                     exit={{ translateY: 100 }}
+                     transition={{ type: "spring", stiffness: 200 }}
+                  >
+                    <PageNotFound />
+                  </motion.div>
+                </div>
+              </>
+            }
+          />
         </Routes>
+        </switch>
         <Footer />
       </Router>
     </div>

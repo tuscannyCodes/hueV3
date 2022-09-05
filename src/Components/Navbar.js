@@ -5,6 +5,7 @@ export const ROUTES = {
   HOME: "/",
   ABOUT: "/about",
   DESIGN: "/design",
+  PAGENOTFOUND: "/pageNotFound",
 };
 let navClass = "nav-link fs-2 fw-bold";
 // i can add 'active' class to this via on click

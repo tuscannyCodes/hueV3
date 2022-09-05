@@ -231,6 +231,16 @@ border-radius: 10px;
 }
 
 /* About Page END */
+
+
+.PageNotFound-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 70vh;
+}
+
+
 /* FOOTER */
 .footer {
 font-size: 2px !important;
