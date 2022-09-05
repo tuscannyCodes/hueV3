@@ -12,7 +12,7 @@ function About() {
 
 
 <h1 className=" fs-1 fw-bold fst-italic mt-5 text-white">About this project!</h1>
-<p className="aboutHeader fs-5 text-white">Meet Hugh, one of my favorite ongoing projects, and personal assistant chatbot. I started building Hugh as soon as I started learning <span className="fw-bold text-white">HTML, CSS </span>and <span className="fw-bold text-white"> JavaScript</span> a few years ago. Over time Ive reworked and rebuilt Hugh many times, and in this current iteration, Ive decided to make this project my portfolio website.</p>
+<p className="aboutHeader fs-5 text-white">Meet Hugh, a conversational chatbot application, one of my favorite ongoing projects. I started building Hugh as soon as I started learning <span className="fw-bold text-white">HTML, CSS </span>and <span className="fw-bold text-white"> JavaScript</span> a few years ago. Over time Ive reworked and rebuilt Hugh many times, and in this current iteration, Ive decided to intergrate the Hugh Chatbot into my <a href= "https://tuscannycodes.github.io/hueV3/" >portfolio website.</a></p>
 
 <p className="aboutHeader fs-5 text-white">This version of Hugh is built using <span className="fw-bold text-white">React Js, Bootstrap </span>and <span className="fw-bold text-white">Framer Motion</span> (also prototyped in <span className="fw-bold text-white">Figma</span>). It has always been a primary concern when building Hugh, to make the user interface 'toy-like' while expanding the complexity of application under the hood. </p>
 
