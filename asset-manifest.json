@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hueV3/static/css/main.7dff64ef.css",
-    "main.js": "/hueV3/static/js/main.652d8640.js",
+    "main.js": "/hueV3/static/js/main.e762f61a.js",
     "static/js/787.c021a8fc.chunk.js": "/hueV3/static/js/787.c021a8fc.chunk.js",
     "static/media/simon.jpg": "/hueV3/static/media/simon.fd7c48684c8db9dd97f1.jpg",
     "static/media/portfolio.jpg": "/hueV3/static/media/portfolio.3a4577545bfed6f94ab1.jpg",
@@ -9,11 +9,11 @@
     "static/media/fruitGame.jpg": "/hueV3/static/media/fruitGame.662adf2d3d0a36bca523.jpg",
     "index.html": "/hueV3/index.html",
     "main.7dff64ef.css.map": "/hueV3/static/css/main.7dff64ef.css.map",
-    "main.652d8640.js.map": "/hueV3/static/js/main.652d8640.js.map",
+    "main.e762f61a.js.map": "/hueV3/static/js/main.e762f61a.js.map",
     "787.c021a8fc.chunk.js.map": "/hueV3/static/js/787.c021a8fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dff64ef.css",
-    "static/js/main.652d8640.js"
+    "static/js/main.e762f61a.js"
   ]
 }
