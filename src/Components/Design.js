@@ -36,7 +36,7 @@ function Design() {
             <p className="card-text">
               A landing page layout design created using Bootstrap.
             </p>
-            <a href="https://tuscannycodes.github.io/Bootstrap_Practice/" target="_blank" className="btn btn-dark">
+            <a href="#" className="btn btn-dark">
               visit
             </a>
           </div>
@@ -60,7 +60,7 @@ function Design() {
             <p className="card-text">
               A minimally designed version of the classic game Simon. 
             </p>
-            <a href="https://tuscannycodes.github.io/simon/" target="_blank" className="btn btn-dark">
+            <a href="#" className="btn btn-dark">
               visit
             </a>
           </div>
