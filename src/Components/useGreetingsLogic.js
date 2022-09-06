@@ -10,7 +10,7 @@ const useGreetingsLogic = (response, setResponse) => {
       const greetings = {
         greets: [
           "hello",
-          "hi",
+          // "hi",
           "hey",
           "good morning",
           "goodbye",
@@ -21,6 +21,7 @@ const useGreetingsLogic = (response, setResponse) => {
           "howdy",
           "good afternoon",
         ],
+        sayingHi:["hi"," hi"],
         responses: [
           "hello",
           "hello there",
@@ -66,6 +67,12 @@ const useGreetingsLogic = (response, setResponse) => {
           if (userInput.includes(greetings.greets[4])) {
             setResponse("Goodbye. See you later.");
           }
+
+          if (userInput.includes(greetings.sayingHi[0] || userInput.includes(greetings.sayingHi[1]))){
+
+            setResponse("XXX");
+          }
+
         }, // getGreetResponse method END
       }; // greeting object END
       greetings.getGreetResponse();

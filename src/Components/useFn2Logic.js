@@ -16,7 +16,7 @@ const useFn2Logic = () => {
   // let audio = [new Audio('hughTalk1.mp3'),new Audio('hughTalk2.mp3'),new Audio('hughTalk3.mp3'),new Audio('hughTalk4.mp3')]
   // DISCARDED AUDIO*********
   // STATE
-  const [response, setResponse] = useState(".__.");
+  const [response, setResponse] = useState("im a chatbot");
   
  
   // STATE END
