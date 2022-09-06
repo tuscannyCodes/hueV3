@@ -19,7 +19,7 @@ function Design() {
           <div className="card-body">
             <h5 className="card-title">Animated Website</h5>
             <p className="card-text">
-              Animated website design created with React and Framer Motion.
+              Animated website design, created with React and Framer Motion.
             </p>
             <a href="#" className="btn btn-dark">
               visit
